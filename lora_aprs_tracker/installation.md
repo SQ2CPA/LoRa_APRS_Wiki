@@ -1,6 +1,6 @@
 ---
 layout: tracker
-title: LoRa APRS Tracker Installation
+title: Installation
 permalink: /lora_aprs_tracker/installation/
 ---
 

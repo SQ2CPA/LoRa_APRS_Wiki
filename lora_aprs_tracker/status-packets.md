@@ -1,6 +1,6 @@
 ---
 layout: tracker
-title: LoRa APRS Tracker Status Packets
+title: Status Packets
 permalink: /lora_aprs_tracker/status-packets/
 ---
 

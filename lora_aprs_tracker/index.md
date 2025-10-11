@@ -1,6 +1,6 @@
 ---
 layout: tracker
-title: LoRa APRS Tracker Home
+title: Home
 permalink: /lora_aprs_tracker/index/
 ---
 

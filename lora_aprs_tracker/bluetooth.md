@@ -1,6 +1,6 @@
 ---
 layout: tracker
-title: LoRa APRS Tracker Bluetooth
+title: Bluetooth
 permalink: /lora_aprs_tracker/bluetooth/
 ---
 

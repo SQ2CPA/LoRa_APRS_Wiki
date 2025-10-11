@@ -1,6 +1,6 @@
 ---
 layout: tracker
-title: LoRa APRS Tracker Updating
+title: Updating
 permalink: /lora_aprs_tracker/updating/
 ---
 

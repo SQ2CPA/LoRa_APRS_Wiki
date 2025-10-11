@@ -1,6 +1,6 @@
 ---
 layout: tracker
-title: LoRa APRS Tracker How Telemetry works
+title: How Telemetry works
 permalink: /lora_aprs_tracker/telemetry/
 ---
 

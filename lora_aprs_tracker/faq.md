@@ -1,6 +1,6 @@
 ---
 layout: tracker
-title: LoRa APRS Tracker FAQ
+title: FAQ
 permalink: /lora_aprs_tracker/faq/
 ---
 

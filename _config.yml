@@ -1,14 +1,13 @@
-title: LoRa APRS Projects Wiki
-description: >- # this means to ignore newlines until "baseurl:"
+title: LoRa APRS Wiki
+description: >
     The central documentation and knowledge base for LoRa APRS projects,
-    including the Tracker, Digi/iGate, and Mobile App.
-baseurl: "/LoRa_APRS_Wiki" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: SQ2CPA # Change this
+    including the Tracker, Digi/iGate and Mobile App.
+baseurl: "/LoRa_APRS_Wiki"
+url: ""
+github_username: SQ2CPA
 
-# Theme settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "default" # "air", "dark", "dirt", "neon", "mint", "sunrise", "dark" are other options
+minimal_mistakes_skin: "default"
 
 markdown: kramdown
 permalink: /:categories/:title/

@@ -1,6 +1,6 @@
 ---
 layout: tracker
-title: LoRa APRS Tracker Button Functions
+title: Button Functions
 permalink: /lora_aprs_tracker/button-functions/
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: tracker
-title: LoRa APRS Tracker Configuration
+title: Configuration
 permalink: /lora_aprs_tracker/configuration/
 ---
 

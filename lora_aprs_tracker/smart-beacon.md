@@ -1,6 +1,6 @@
 ---
 layout: tracker
-title: LoRa APRS Tracker Understanding Smart Beacon
+title: Understanding Smart Beacon
 permalink: /lora_aprs_tracker/smart-beacon/
 ---
 
