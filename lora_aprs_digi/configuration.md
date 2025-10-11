@@ -18,6 +18,7 @@ At the top of the page, you'll find the main navigation menu:
 -   **Configuration**: The main page with all the settings described below.
 -   **Received Packets**: A table showing the most recent LoRa packets received by the device.
 -   **Update**: Page for updating the device's firmware.
+    -   ➡️ Read more about the update process: [Firmware Update](/lora_aprs_digi/updating/)
 -   **Backup**:
     -   **Create Backup**: Downloads a file with all your current settings.
     -   **Restore Config**: Allows you to upload a previously saved backup file to restore your settings.
@@ -92,6 +93,7 @@ This section allows you to monitor and report the voltage of the internal batter
 
 -   **Send Internal/External Voltage**: Check these boxes to include voltage readings in your beacons.
 -   **Send Voltage As Telemetry**: If checked, voltage data will be sent as APRS telemetry packets.
+    -   ➡️ Learn more about how telemetry works: [APRS Telemetry](/lora_aprs_digi/telemetry/)
 -   **External Voltage Pin**: The GPIO pin number where the external voltage source is connected.
 -   **Voltage Divider R1 / R2 (Ω)**: The resistance values of your external voltage divider circuit.
 -   **Internal/External Voltage Calibration**: These fields allow you to calibrate the voltage readings by mapping raw ADC input values (`Raw Input`) to actual measured voltage values (`Mapped Output`).
@@ -106,6 +108,8 @@ Manage the device's power-saving features.
 ### TNC Settings
 
 Configure the device to act as a Terminal Node Controller (TNC) using the KISS protocol.
+
+➡️ For a detailed guide on using the TNC, see: [TNC (KISS Protocol)](/lora_aprs_digi/tnc-kiss/)
 
 -   **Enable TNC Server**: Enables a KISS TNC server over TCP/IP (WiFi).
 -   **Enable Serial KISS**: Enables a KISS TNC over the device's serial (USB) port.
@@ -125,6 +129,8 @@ Configure the device's connection to the global APRS Internet Service network.
 
 Enables the device to act as a weather station by sending telemetry data from a connected sensor.
 
+➡️ For more details on supported sensors and data format, see: [Weather (WX) Telemetry](/lora_aprs_digi/wx-telemetry/)
+
 -   **Activate Wx Telemetry**: Enables this feature. Requires a compatible sensor (e.g., BME280, SHT31) to be connected.
 -   **Height Correction (m)**: A value in meters to add to the sensor's altitude reading for calibration.
 -   **Temperature Correction (°C)**: A value in degrees Celsius to add to the sensor's temperature reading for calibration.
@@ -136,6 +142,8 @@ Enables the device to act as a weather station by sending telemetry data from a 
 ### Syslog Settings
 
 Configure the device to send logs to a remote syslog server for monitoring.
+
+➡️ Learn how to set up and use syslog: [Syslog Monitoring](/lora_aprs_digi/syslog/)
 
 -   **Enable syslog**: Turns the feature on or off.
 -   **Mode**: Select a preset server from the list.
@@ -156,10 +164,13 @@ Manage the settings for the device's built-in display.
 -   **Ignored callsigns (blacklist)**: A comma-separated list of callsigns from which packets should be ignored.
 -   **Don't send blacklisted packets via TNC**: If checked, packets from blacklisted callsigns will not be forwarded to the TNC interfaces.
 -   **Admins callsigns (station operators)**: A comma-separated list of callsigns that have administrative privileges.
+    -   ➡️ Find out what administrative users can do: [Query Messages](/lora_aprs_digi/query-messages/)
 
 ### Metrics, System Status & Last Received Packets
 
 These final sections are for display only and show real-time information about the device's operation.
+
+➡️ Understand the data displayed here: [Status Packets](/lora_aprs_digi/status-packets/)
 
 -   **Metrics**: Shows packet counters for received (RX), transmitted (TX), and digipeated packets.
 -   **System Status**: Displays CPU speed, RAM usage, temperature, radio signal strength (RSSI), and WiFi signal strength.
