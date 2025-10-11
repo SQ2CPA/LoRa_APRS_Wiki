@@ -1,6 +1,6 @@
 ---
 layout: digi
-title: Configuration (Digipeater)
+title: Configuration
 permalink: /lora_aprs_digi/configuration/
 ---
 
