@@ -83,9 +83,9 @@ body {
     background-color: var(--sidebar-bg);
     padding: 2rem 1.5rem;
     border-right: 1px solid var(--border-color);
-    height: calc(100vh - 70px); // Full height minus header
+    height: calc(100vh - 70px);
     position: sticky;
-    top: 70px; // Adjust based on header height
+    top: 70px;
     overflow-y: auto;
 }
 
@@ -121,7 +121,6 @@ body {
 .content {
     flex-grow: 1;
     padding: 2rem;
-    max-width: 800px; // Optimal reading width
 
     h1,
     h2,
