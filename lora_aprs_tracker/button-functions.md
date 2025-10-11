@@ -1,3 +1,9 @@
+---
+layout: tracker
+title: LoRa APRS Tracker Button Functions
+permalink: /lora_aprs_tracker/button-functions/
+---
+
 The functionality of the buttons can differ depending on the specific LoRa APRS tracker device you are using. This page outlines the button operations for the most common devices.
 
 ---

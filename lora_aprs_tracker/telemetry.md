@@ -1,3 +1,9 @@
+---
+layout: tracker
+title: LoRa APRS Tracker How Telemetry works
+permalink: /lora_aprs_tracker/telemetry/
+---
+
 Telemetry allows your tracker to send small pieces of data, like sensor readings, to the APRS network. In this firmware, it's primarily used to report the device's battery and external voltage.
 
 ---

@@ -1,3 +1,9 @@
+---
+layout: tracker
+title: LoRa APRS Tracker Updating
+permalink: /lora_aprs_tracker/updating/
+---
+
 There are several ways to update your device to the latest firmware. The recommended methods are **Manual OTA** or **Remote OTA**, as they preserve your device's settings.
 
 ---

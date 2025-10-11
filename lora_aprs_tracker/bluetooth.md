@@ -1,3 +1,9 @@
+---
+layout: tracker
+title: LoRa APRS Tracker Bluetooth
+permalink: /lora_aprs_tracker/bluetooth/
+---
+
 This firmware supports Terminal Node Controller (TNC) functionality over Bluetooth, allowing you to connect your device to APRS software on your computer or smartphone (e.g., APRSdroid).
 
 ---

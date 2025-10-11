@@ -1,3 +1,9 @@
+---
+layout: tracker
+title: LoRa APRS Tracker Configuration
+permalink: /lora_aprs_tracker/configuration/
+---
+
 The device's configuration is managed through a web interface. You can access it in two ways:
 
 -   **Access Point (AP) Mode**: When the device cannot connect to a saved WiFi network (or after a factory reset), it creates its own WiFi Access Point (AP). The SSID is your callsign (or `N0CALL` by default). Connect to this network and open `http://192.168.4.1` in your web browser.
@@ -71,7 +77,7 @@ Control how your position beacons are transmitted.
 -   **Smart beacon**: Enables an algorithm that adjusts the beacon rate based on speed and direction changes. This is useful for mobile stations to report their position more frequently when turning or changing speed, and less frequently when stationary or moving in a straight line. Options are `Disabled`, `Car`, `Bike`, or `Runner`.
 -   **Send Beacon**: A button to manually trigger a single beacon transmission immediately.
 
-    -   **➡️ You can read more about Smart Beacon vs Beacon Interval: [Understanding Smart Beacon](https://github.com/SQ2CPA/LoRa_APRS_Tracker/wiki/Understanding-Smart-Beacon)**
+    -   **➡️ You can read more about Smart Beacon vs Beacon Interval: [Understanding Smart Beacon](/LoRa_APRS_Wiki/lora_aprs_tracker/smart-beacon/)**
 
 ### Digipeater Settings
 
@@ -85,7 +91,7 @@ Configure the device to act as a digital repeater (digipeater).
 
 -   **Enable Telemetry**: Check this box to enable the transmission of telemetry data.
 
-    -   **➡️ You can read more about Telemetry: [How Telemetry works](https://github.com/SQ2CPA/LoRa_APRS_Tracker/wiki/How-Telemetry-works)**
+    -   **➡️ You can read more about Telemetry: [How Telemetry works](/LoRa_APRS_Wiki/lora_aprs_tracker/telemetry/)**
 
 ### Voltage Monitoring
 
@@ -108,7 +114,7 @@ Manage the device's power-saving features, especially for battery-powered operat
 
 -   **Enable Bluetooth**: Activates the Bluetooth module to provide a KISS TNC interface over Bluetooth (either Classic or BLE, depending on the hardware). The Bluetooth device name will be your callsign.
 
-    -   **➡️ You can read more about Bluetooth: [Bluetooth](/lora_aprs_tracker/bluetooth/)**
+    -   **➡️ You can read more about Bluetooth: [Bluetooth](/LoRa_APRS_Wiki/lora_aprs_tracker/bluetooth/)**
 
 ### TNC Settings
 

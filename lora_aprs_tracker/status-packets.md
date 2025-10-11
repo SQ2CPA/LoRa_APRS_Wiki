@@ -1,3 +1,9 @@
+---
+layout: tracker
+title: LoRa APRS Tracker Status Packets
+permalink: /lora_aprs_tracker/status-packets/
+---
+
 In the APRS network, a status packet serves a specific, functional purpose. It is not meant to be an advertising banner or a static message. Its goal is to inform other stations about the current state, activity, or configuration of your device in real-time.
 
 Our firmware uses status packets to announce key events, which can be helpful for remote diagnostics or simply understanding what the tracker is doing.
@@ -44,5 +50,5 @@ Below is a list of the status packets that your tracker can automatically transm
     -   **Meaning**: This status serves as a "last gasp" message, informing the network that the device is shutting down temporarily to protect its battery until the voltage recovers (e.g., through solar charging).
 
 8.  **`Turned off`**
-    -   **When it's sent**: Transmitted when the device is being turned off by the user. This applies only to devices without an AXP chip (i.e., other than T-Beams). See [Button Functions](https://github.com/SQ2CPA/LoRa_APRS_Tracker/wiki/Button-Functions) for more information.
+    -   **When it's sent**: Transmitted when the device is being turned off by the user. This applies only to devices without an AXP chip (i.e., other than T-Beams). See [Button Functions](/LoRa_APRS_Wiki/lora_aprs_tracker/button-functions/) for more information.
     -   **Meaning**: A notification that the device has been intentionally powered down by the user.

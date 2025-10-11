@@ -1,3 +1,9 @@
+---
+layout: tracker
+title: LoRa APRS Tracker Installation
+permalink: /lora_aprs_tracker/installation/
+---
+
 There are two methods to install the firmware on your device. The recommended method is using our web flasher, as it is the easiest and most straightforward way. WiFi AP default password after flashing: `0123456789`. After flashing check `Configuration` page on wiki.
 
 ---

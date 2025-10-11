@@ -1,3 +1,9 @@
+---
+layout: tracker
+title: LoRa APRS Tracker Understanding Smart Beacon
+permalink: /lora_aprs_tracker/smart-beacon/
+---
+
 Smart Beacon is an intelligent algorithm designed to make your tracker transmit its position in a more efficient and relevant way. Instead of sending beacons at a fixed rate (e.g., every 2 minutes), Smart Beacon adjusts the transmission frequency based on your movement, specifically your speed and changes in direction.
 
 The main `Beacon Interval` setting in the configuration becomes the **slowest** possible transmission rate when Smart Beacon is active.

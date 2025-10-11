@@ -16,11 +16,11 @@ Getting your LoRa APRS Tracker running is easy. Follow these steps in order:
 
 1.  **Installation**: First, you need to flash the firmware onto your device. Follow the detailed instructions on the installation page.
 
-    -   **➡️ [Go to Installation Guide](https://github.com/SQ2CPA/LoRa_APRS_Tracker/wiki/Installation)**
+    -   **➡️ [Go to Installation Guide](/LoRa_APRS_Wiki/lora_aprs_tracker/installation/)**
 
 2.  **Configuration**: Once the firmware is installed, you'll need to configure your station's parameters, such as your callsign, WiFi, and LoRa settings.
 
-    -   **➡️ [Go to Configuration Guide](https://github.com/SQ2CPA/LoRa_APRS_Tracker/wiki/Configuration)**
+    -   **➡️ [Go to Configuration Guide](/LoRa_APRS_Wiki/lora_aprs_tracker/configuration/)**
 
 3.  **Learn More**: After completing the basic setup, you can explore the rest of the wiki to understand advanced features like updating the firmware and more.
 
