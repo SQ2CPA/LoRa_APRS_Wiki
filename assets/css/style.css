@@ -1,8 +1,8 @@
 ---
-# Front matter marker is required for Jekyll to process this file
+# Front matter is required for SCSS files to be processed by Jekyll
+layout: null
 ---
 
-// Variables
 :root {
     --primary-color: #0f9600;
     --primary-color-dark: #0b6e00;
@@ -16,7 +16,6 @@
     --font-family: "Roboto", sans-serif;
 }
 
-// General Body Styles
 body {
     font-family: var(--font-family);
     margin: 0;
@@ -32,7 +31,6 @@ body {
     margin: 0 auto;
 }
 
-// Header
 .site-header {
     background-color: var(--header-bg);
     border-bottom: 1px solid var(--border-color);
@@ -71,7 +69,6 @@ body {
     }
 }
 
-// Main Layout
 .main-container {
     display: flex;
     .wrapper {
@@ -80,7 +77,6 @@ body {
     }
 }
 
-// Sidebar
 .sidebar {
     width: 240px;
     flex-shrink: 0;
@@ -122,7 +118,6 @@ body {
     }
 }
 
-// Main Content
 .content {
     flex-grow: 1;
     padding: 2rem;
@@ -193,7 +188,6 @@ body {
     }
 }
 
-// Footer
 .site-footer {
     border-top: 1px solid var(--border-color);
     padding: 1.5rem 0;
@@ -202,7 +196,6 @@ body {
     font-size: 0.9rem;
 }
 
-// Responsive design
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
