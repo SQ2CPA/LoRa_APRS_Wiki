@@ -2,8 +2,8 @@ title: LoRa APRS Wiki
 description: >
     The central documentation and knowledge base for LoRa APRS projects,
     including the Tracker, Digi/iGate and Mobile App.
-baseurl: "/LoRa_APRS_Wiki"
-url: ""
+baseurl: ""
+url: "https://wiki.lora-aprs.pl"
 github_username: SQ2CPA
 
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
