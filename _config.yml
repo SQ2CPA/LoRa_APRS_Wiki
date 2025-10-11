@@ -19,8 +19,6 @@ defaults:
           type: "pages"
       values:
           layout: "default"
-          sidebar:
-              nav: "tracker"
 
 plugins:
     - jekyll-feed
