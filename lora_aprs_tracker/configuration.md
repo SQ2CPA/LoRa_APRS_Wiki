@@ -75,9 +75,10 @@ Control how your position beacons are transmitted.
 
 -   **Beacon Interval (seconds)**: How often the device sends its position beacon.
 -   **Smart beacon**: Enables an algorithm that adjusts the beacon rate based on speed and direction changes. This is useful for mobile stations to report their position more frequently when turning or changing speed, and less frequently when stationary or moving in a straight line. Options are `Disabled`, `Car`, `Bike`, or `Runner`.
+-   **Send Extra Info**: Allows you to include additional data in your position beacon. Options are `None`, `Course + Speed`, or `Altitude`.
 -   **Send Beacon**: A button to manually trigger a single beacon transmission immediately.
 
-    -   **➡️ You can read more about Smart Beacon vs Beacon Interval: [Understanding Smart Beacon](/lora_aprs_tracker/smart-beacon/)**
+    -   ➡️ You can read more about Smart Beacon vs Beacon Interval: [Understanding Smart Beacon](/lora_aprs_tracker/smart-beacon/)
 
 ### Digipeater Settings
 
@@ -91,7 +92,7 @@ Configure the device to act as a digital repeater (digipeater).
 
 -   **Enable Telemetry**: Check this box to enable the transmission of telemetry data.
 
-    -   **➡️ You can read more about Telemetry: [How Telemetry works](/lora_aprs_tracker/telemetry/)**
+    -   ➡️ You can read more about Telemetry: [How Telemetry works](/lora_aprs_tracker/telemetry/)
 
 ### Voltage Monitoring
 
@@ -114,7 +115,7 @@ Manage the device's power-saving features, especially for battery-powered operat
 
 -   **Enable Bluetooth**: Activates the Bluetooth module to provide a KISS TNC interface over Bluetooth (either Classic or BLE, depending on the hardware). The Bluetooth device name will be your callsign.
 
-    -   **➡️ You can read more about Bluetooth: [Bluetooth](/lora_aprs_tracker/bluetooth/)**
+    -   ➡️ You can read more about Bluetooth: [Bluetooth](/lora_aprs_tracker/bluetooth/)
 
 ### TNC Settings
 
@@ -138,9 +139,11 @@ This new section allows you to manage the settings for the device's built-in dis
 ### Advanced Settings
 
 -   **CPU frequency**: Select the operating frequency for the device's processor. Options include `40 MHz`, `80 MHz`, `160 MHz`, and `240 MHz`.
+-   **Admins callsigns (station operators)**: A comma-separated list of callsigns that have administrative privileges (e.g., for remote commands).
 -   **Ignored callsigns (blacklist)**: A comma-separated list of callsigns from which packets should be ignored.
 -   **Don't send blacklisted packets via TNC**: If checked, packets from blacklisted callsigns will not be forwarded to the TNC interfaces.
--   **Admins callsigns (station operators)**: A comma-separated list of callsigns that have administrative privileges (e.g., for remote commands).
+-   **Don't send initial telemetry frames**: If checked, the device will skip sending the initial telemetry setup frames (`PARM`, `UNIT`, `EQNS`) upon startup.
+-   **GPS baudrate**: Allows you to override the default serial communication speed for an external GPS module. Select "Use board default" for most built-in modules.
 
 ### System Status & Last Received Packets
 
