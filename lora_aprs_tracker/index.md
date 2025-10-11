@@ -4,6 +4,8 @@ title: Home
 permalink: /lora_aprs_tracker/index/
 ---
 
+> This documentation was last updated on 11 October 2025, and applies to firmware version **v1.0.4**.
+
 **LoRa APRS Tracker** is a software solution designed with a strong focus on RF-based APRS communication at **434.855 MHz\*** **1200 bps**. This project prioritizes reliable radio-frequency (RF) communication and **tracker** functionality, rather than acting as only tracker to send your position. If you're looking for an RF-centric solution tailored for LoRa APRS operations, this is the software for you.
 
 -   It's not just the different frequency that is significant here. The key distinction is the use of a 1200 bps data rate - emulating traditional packet radio speeds - on a frequency that operates outside the heavily regulated and often congested ISM band. This specific combination is what enables more robust and reliable RF performance, which is the core focus of this project

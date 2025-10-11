@@ -6,6 +6,8 @@ permalink: /
 
 ## Central Knowledge Base for LoRa APRS Projects
 
+> This documentation is actively maintained and serves as the primary source of information for all our LoRa APRS projects. You will always find the most up-to-date guides and configurations here. Specific version numbers and update dates are listed within the relevant projects.
+
 Welcome to the official documentation hub for a collection of LoRa APRS projects. This site serves as the central point for user guides, configuration details, and general information to help you get the most out of our software and hardware solutions.
 
 Our goal is to provide clear, concise, and easy-to-follow documentation for all users, from beginners to advanced operators.
