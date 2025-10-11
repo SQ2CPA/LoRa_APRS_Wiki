@@ -6,7 +6,7 @@ There are two methods to install the firmware on your device. The recommended me
 
 This method allows you to flash the firmware directly from your web browser.
 
-**Website:** [**flasher.sq2cpa.pl**](https://flasher.sq2cpa.pl)
+**Website:** [**flasher.lora-aprs.pl**](https://flasher.lora-aprs.pl)
 
 ### How to flash your device correctly?
 

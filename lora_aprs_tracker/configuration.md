@@ -108,7 +108,7 @@ Manage the device's power-saving features, especially for battery-powered operat
 
 -   **Enable Bluetooth**: Activates the Bluetooth module to provide a KISS TNC interface over Bluetooth (either Classic or BLE, depending on the hardware). The Bluetooth device name will be your callsign.
 
-    -   **➡️ You can read more about Bluetooth: [Bluetooth](https://github.com/SQ2CPA/LoRa_APRS_Tracker/wiki/Bluetooth)**
+    -   **➡️ You can read more about Bluetooth: [Bluetooth](/lora_aprs_tracker/bluetooth/)**
 
 ### TNC Settings
 
