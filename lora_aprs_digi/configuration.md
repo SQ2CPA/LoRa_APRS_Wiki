@@ -6,7 +6,7 @@ permalink: /lora_aprs_digi/configuration/
 
 The device's configuration is managed through a web interface. You can access it in two ways:
 
--   **Access Point (AP) Mode**: When the device cannot connect to a saved WiFi network (or after a factory reset), it creates its own WiFi Access Point (AP). The SSID is your callsign (or `N0CALL` by default). Connect to this network and open `http://192.168.4.1` in your web browser.
+-   **Access Point (AP) Mode**: When the device cannot connect to a saved WiFi network (or after a factory reset), it creates its own WiFi Access Point (AP). The SSID is your callsign (or `N0CALL-10` by default). Connect to this network and open `http://192.168.4.1` in your web browser.
 -   **Station (STA) Mode**: When the device is connected to your local WiFi network, its IP address will be displayed on the screen. Enter this IP address into your web browser to access the configuration page.
 
 ---

@@ -6,7 +6,7 @@ permalink: /lora_aprs_digi/index/
 
 > This documentation was last updated on 11 October 2025, and applies to firmware version **v1.0.4**.
 
-**LoRa APRS Digi/iGate** is a software solution designed with a strong focus on RF-based APRS network infrastructure at **434.855 MHz\*** at **1200 bps**. This project prioritizes reliable radio-frequency (RF) communication and its functionality as a high-performance **Digipeater** and **IGate**, rather than acting as a tracker sending its own position. If you're looking for a fast and efficient solution to build out the LoRa APRS network that respects APRS, this is the software for you.
+**LoRa APRS Digi/iGate** is a software solution designed with a strong focus on RF-based APRS network infrastructure at **1200 bps**. This project prioritizes reliable radio-frequency (RF) communication and its functionality as a high-performance **Digipeater** and **IGate**, rather than acting as a tracker sending its own position. If you're looking for a fast and efficient solution to build out the LoRa APRS network that respects APRS, this is the software for you.
 
 -   It's not just the different frequency that is significant here. The key distinction is the use of a 1200 bps data rate—emulating traditional packet radio speeds—on a frequency that operates outside the heavily regulated and often congested ISM band. This specific combination is what enables more robust and reliable RF performance, which is the core focus of this project.
 
@@ -34,7 +34,7 @@ Getting your LoRa APRS Digi/IGate running is easy. Follow these steps in order:
 -   **Digipeater Priority**: Repeating RF packets is always prioritized over sending them to the internet (IGate).
 -   **Ultra-Fast**: No packet drops due to unnecessary delays. Speed is more important than showing info on a display.
 -   **Clean RF Channel**: Status and telemetry frames are sent directly to APRS-IS to keep the radio frequency clear.
--   **Optimized for 434.855 MHz**: Specifically tailored for operation outside the noisy 70cm ISM band.
+-   **Optimized for 1200 bps**: Specifically tailored for fast RF operations.
 -   **Lightweight and Efficient**: Minimal resource usage for deployment on low-power systems.
 
 ---
