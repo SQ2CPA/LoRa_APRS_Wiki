@@ -33,7 +33,8 @@ The Heltec Wireless Tracker is equipped with two buttons. When holding the track
 -   **Left Button:** This is the primary **user and power button**.
 
     -   A **short press** will force the tracker to send a beacon or wake up the screen if it has timed out.
-    -   A **long press (about 2 seconds)** will turn the device off.
+    -   A **long press (about 2 seconds)** will turn the device off by putting it into a deep sleep mode.
+        -   ➡️ You can read more about how this works here: [Power Off Modes](/lora_aprs_tracker/power-off-modes/)
 
 -   **Right Button:** This is the **reset/power-on button**.
     -   Use this button to **restart** the tracker.

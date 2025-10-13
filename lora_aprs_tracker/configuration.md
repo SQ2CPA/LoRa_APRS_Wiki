@@ -82,11 +82,23 @@ Control how your position beacons are transmitted.
 
 ### Digipeater Settings
 
-Configure the device to act as a digital repeater (digipeater).
+This section allows you to configure the device to act as a simple digital repeater (digipeater).
+
+This feature is designed for **personal range extension** and is not meant to build a public, wide-area APRS digipeater. For this reason, the options are simplified and do not include standard network paths like `WIDE1-1` or `WIDE2-2`.
+
+---
 
 -   **Mode**:
-    -   `Disabled`: The digipeater function is off.
-    -   `Repeat only if own call is addressed`: The device will only repeat packets that are specifically addressed to its callsign.
+    -   `Disabled`: The digipeater function is turned off.
+    -   `Repeat only if own call is addressed`: The device will only re-transmit APRS packets that are specifically addressed to its callsign. This is useful when you want to use a second device (e.g., in a car or backpack) as a personal "relay" to extend the range of your primary tracker.
+
+---
+
+#### Why are there no WIDE1, WIDE2 Digi modes?
+
+Modes like `WIDE1`, `WIDE2` are used by dedicated, stationary digipeaters to repeat packets for _all_ nearby users in a wide area.
+
+The digipeater function in this tracker is **personal and targeted**. Its purpose is to relay packets from _your own_ specific device to help it reach another station when direct range is insufficient. This approach prevents a mobile tracker from creating unnecessary network congestion by repeating all local traffic.
 
 <!-- ### Telemetry Settings
 
