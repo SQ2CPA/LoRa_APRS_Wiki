@@ -88,11 +88,11 @@ Configure the device to act as a digital repeater (digipeater).
     -   `Disabled`: The digipeater function is off.
     -   `Repeat only if own call is addressed`: The device will only repeat packets that are specifically addressed to its callsign.
 
-### Telemetry Settings
+<!-- ### Telemetry Settings
 
 -   **Enable Telemetry**: Check this box to enable the transmission of telemetry data.
 
-    -   ➡️ You can read more about Telemetry: [How Telemetry works](/lora_aprs_tracker/telemetry/)
+    -   ➡️ You can read more about Telemetry: [How Telemetry works](/lora_aprs_tracker/telemetry/) -->
 
 ### Voltage Monitoring
 
