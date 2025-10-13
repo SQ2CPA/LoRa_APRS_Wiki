@@ -14,7 +14,7 @@ This method is identical to a first-time installation and will **erase all your 
 
 **⚠️ Important:** If you choose this method, you must first create a backup of your settings via the device's web interface. After flashing, you will need to restore this backup file to recover your configuration.
 
-1.  Go to [**flasher.sq2cpa.pl**](https://flasher.sq2cpa.pl).
+1.  Go to [**flasher.lora-aprs.pl**](https://flasher.lora-aprs.pl).
 2.  Follow the same steps as for the initial installation.
 3.  After the flash is complete, connect to the device, access the web interface, and use the "Restore" function to upload your backed-up settings file.
 
