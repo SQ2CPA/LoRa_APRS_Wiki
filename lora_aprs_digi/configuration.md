@@ -170,7 +170,7 @@ Manage the settings for the device's built-in display.
 
 This section displays real-time packet counters. These metrics are the same data that the device sends in its telemetry.
 
--   ➡️ Learn more about how telemetry works: [APRS Telemetry](/lora_aprs_digi/telemetry/)
+➡️ Learn more about how telemetry works: [APRS Telemetry](/lora_aprs_digi/telemetry/)
 
 -   **RX packets count**: Total number of packets received.
 -   **TX packets count**: Total number of packets transmitted by this device.
