@@ -157,9 +157,24 @@ This new section allows you to manage the settings for the device's built-in dis
 -   **Don't send initial telemetry frames**: If checked, the device will skip sending the initial telemetry setup frames (`PARM`, `UNIT`, `EQNS`) upon startup.
 -   **GPS baudrate**: Allows you to override the default serial communication speed for an external GPS module. Select "Use board default" for most built-in modules.
 
-### System Status & Last Received Packets
+---
 
-These last two sections are not for configuration but for displaying information:
+### System Status
 
--   **System Status**: Shows real-time metrics like CPU Speed, RAM Usage, Temperature, and WiFi Strength.
--   **Last Received Packets**: A table showing details of the most recent LoRa packets heard by the device, including timestamp, packet data, RSSI, SNR, and frequency error.
+This section provides a live overview of the device's operational parameters.
+
+-   **CPU Speed**: Current operating frequency of the processor.
+-   **RAM usage**: How much RAM is currently in use.
+-   **Temperature**: The internal temperature of the main chip.
+-   **WiFi Strength**: The signal strength of the connection to your WiFi network.
+
+---
+
+### Last Received Packets
+
+This table displays the most recent LoRa packets heard by the device.
+
+-   The **Time** column shows Coordinated Universal Time (UTC) if available, or the time since the device was last started (uptime) otherwise.
+-   Packets may be prefixed with indicators:
+    -   `CRC>`: Indicates a packet received with a CRC error.
+    -   `INVALID>`: Indicates an invalid frame that is not supported (e.g., does not meet AX.25 protocol requirements).

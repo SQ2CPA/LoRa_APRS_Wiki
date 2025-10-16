@@ -166,12 +166,35 @@ Manage the settings for the device's built-in display.
 -   **Admins callsigns (station operators)**: A comma-separated list of callsigns that have administrative privileges.
     -   ➡️ Find out what administrative users can do: [Query Messages](/lora_aprs_digi/query-messages/)
 
-### Metrics, System Status & Last Received Packets
+### Metrics
 
-These final sections are for display only and show real-time information about the device's operation.
+This section displays real-time packet counters. These metrics are the same data that the device sends in its telemetry.
 
-➡️ Understand the data displayed here: [Status Packets](/lora_aprs_digi/status-packets/)
+    -   ➡️ Learn more about how telemetry works: [APRS Telemetry](/lora_aprs_digi/telemetry/)
 
--   **Metrics**: Shows packet counters for received (RX), transmitted (TX), and digipeated packets.
--   **System Status**: Displays CPU speed, RAM usage, temperature, radio signal strength (RSSI), and WiFi signal strength.
--   **Last Received Packets**: A table showing details of the most recent LoRa packets heard by the device.
+-   **RX packets count**: Total number of packets received.
+-   **TX packets count**: Total number of packets transmitted by this device.
+-   **Repeated packets (Digi)**: Number of packets that have been digipeated.
+
+---
+
+### System Status
+
+This section provides a live overview of the device's operational parameters.
+
+-   **CPU Speed**: Current operating frequency of the processor.
+-   **RAM usage**: How much RAM is currently in use.
+-   **Temperature**: The internal temperature of the main chip.
+-   **Radio RSSI**: This value shows the current background noise level of the LoRa radio, updated every few seconds. It does **not** represent the signal strength of the last received packet. Monitoring this value is useful for diagnosing issues with a high noise floor or local radio frequency (RF) interference.
+-   **WiFi Strength**: The signal strength of the connection to your WiFi network.
+
+---
+
+### Last Received Packets
+
+This table displays the most recent LoRa packets heard by the device.
+
+-   The **Time** column shows Coordinated Universal Time (UTC) if available, or the time since the device was last started (uptime) otherwise.
+-   Packets may be prefixed with indicators:
+    -   `CRC>`: Indicates a packet received with a CRC error.
+    -   `INVALID>`: Indicates an invalid frame that is not supported (e.g., does not meet AX.25 protocol requirements).
