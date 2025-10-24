@@ -18,6 +18,7 @@ The T-Beam tracker has three buttons. The functions are consistent across all ve
 
 -   **Middle Button:** This is the **user button**.
 
+    -   A **double press** will enter or exit the on-screen menu.
     -   A **short press** will force the tracker to send a beacon immediately (provided a GPS fix is available).
     -   If you are using the `display timeout` feature, a short press will also wake up the screen.
 
@@ -33,6 +34,7 @@ The Heltec Wireless Tracker is equipped with two buttons. When holding the track
 -   **Left Button:** This is the primary **user and power button**.
 
     -   A **short press** will force the tracker to send a beacon or wake up the screen if it has timed out.
+    -   A **double press** will enter or exit the on-screen menu.
     -   A **long press (about 2 seconds)** will turn the device off by putting it into a deep sleep mode.
         -   ➡️ You can read more about how this works here: [Power Off Modes](/lora_aprs_tracker/power-off-modes/)
 
