@@ -213,3 +213,21 @@ body {
         gap: 1rem;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2:target,
+h3:target,
+h4:target {
+    border: 2px solid var(--primary-color, green);
+
+    background-color: #f0fff0;
+
+    border-radius: 8px;
+
+    padding: 0.4em 0.6em;
+
+    margin-top: 0.5em;
+}
