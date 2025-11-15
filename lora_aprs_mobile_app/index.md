@@ -4,7 +4,7 @@ title: Home
 permalink: /lora_aprs_mobile_app/index/
 ---
 
-> This documentation was last updated on 25 October 2025, and applies to app version **28.09.2025**.
+> This documentation was last updated on 15 November 2025, and applies to app version **15.11.2025**.
 >
 > **Note:** The LoRa APRS App application has not yet begun full versioning. This will commence with the stable v1.0.0 release.
 
