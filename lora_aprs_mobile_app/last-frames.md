@@ -16,7 +16,7 @@ You can access this screen by tapping the **Frames** button in the **Activity** 
 
 This screen displays a list of all your recent sent and received packets.
 
-![Last Frames Screen](/assets/images/lora_aprs_mobile_app/last-frames/screen.jpg)
+<img src="/assets/images/lora_aprs_mobile_app/last-frames/screen.jpg" alt="Last Frames Screen" style="max-width: 300px; width: 100%;">
 
 Each entry in the list is color-coded:
 
