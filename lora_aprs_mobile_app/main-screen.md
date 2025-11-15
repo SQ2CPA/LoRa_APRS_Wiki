@@ -22,6 +22,8 @@ This bar at the top of the screen provides core status information and navigatio
     -   **Last Locator**: Displays the last known grid square locator reported by your TNC.
     -   **Battery Voltage**: If supported by your device's firmware, it displays the current battery voltage.
 
+You can click on the **Center Status Display** to open the **Device Info** screen.
+
 ## 2. Info Banner
 
 A yellow informational banner is displayed on preview or beta versions, noting that the application is still in development and not all features may work as expected.

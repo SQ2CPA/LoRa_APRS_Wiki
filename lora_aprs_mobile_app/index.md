@@ -5,8 +5,12 @@ permalink: /lora_aprs_mobile_app/index/
 ---
 
 > This documentation was last updated on 25 October 2025, and applies to app version **28.09.2025**.
+>
+> **Note:** The LoRa APRS App application has not yet begun full versioning. This will commence with the stable v1.0.0 release.
 
 **LoRa APRS App** is a mobile application for amateur radio operators, designed with a strong focus on **messaging and network monitoring**. Built by hams, for hams, this app prioritizes solid, reliable communication without the bloat. It does **not** send its own position beacons, acting as a dedicated interface for your LoRa APRS TNC but also works for AFSK VHF APRS.
+
+A key design principle is **true off-grid capability**. The application **does not require an internet connection** and **does not need access to your device's location services (GPS)** to function. The only requirement is a connection to your TNC, allowing you to operate completely independent of cellular or internet infrastructure.
 
 If you're looking for a "set and forget" client that runs in the background, auto-connects to your devices, and just works for messaging, this is the app for you.
 
@@ -51,5 +55,6 @@ While many APRS apps focus on tracking, this project takes a different approach.
 
 -   **Not a Tracker**: This app is **not** an APRS tracker. It will not send your phone's location. It is a client terminal for an external TNC.
 -   **Clean & Simple**: The goal is to provide a clean, reliable interface for sending and receiving messages and monitoring the network. Operations are clear and easy to understand.
--   **Smart Integration**: The app is designed to work perfectly with **SQ2CPA's LoRa APRS firmware** ([flasher.sq2cpa.pl](https://flasher.sq2cpa.pl)), but it remains compatible with other standard KISS TNC devices.
+-   **Smart Integration**: The app is designed to work perfectly with **SQ2CPA LoRa APRS firmware** ([flasher.sq2cpa.pl](https://flasher.sq2cpa.pl)), but it remains compatible with other standard KISS TNC devices.
 -   **Background Reliability**: The app is built to run reliably in the background, ensuring you are always connected to the LoRa APRS network and ready to receive messages.
+-   **True Off-Grid Operation**: The app requires **no internet connection** and **no device location (GPS)** access to function. Its only requirement is a connection to your TNC, ensuring full capability in any off-grid scenario.
