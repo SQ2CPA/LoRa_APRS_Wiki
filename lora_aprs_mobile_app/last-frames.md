@@ -1,14 +1,14 @@
 ---
 layout: mobile_app
 title: Last Frames
-permalink: /lora_aprs_mobile_app/last_frames/
+permalink: /lora_aprs_mobile_app/last-frames/
 ---
 
 The "Last Frames" screen is a log of all APRS packets that have recently been sent or received by your device.
 
 You can access this screen by tapping the **Frames** button in the **Activity** section on the Main Screen.
 
-<img src="/assets/images/lora_aprs_mobile_app/last_frames/activity-section.jpg" alt="Activity Section on Main Screen" style="max-width: 300px; width: 100%;">
+<img src="/assets/images/lora_aprs_mobile_app/last-frames/activity-section.jpg" alt="Activity Section on Main Screen" style="max-width: 300px; width: 100%;">
 
 ---
 
@@ -16,7 +16,7 @@ You can access this screen by tapping the **Frames** button in the **Activity** 
 
 This screen displays a list of all your recent sent and received packets.
 
-![Last Frames Screen](/assets/images/lora_aprs_mobile_app/last_frames/screen.jpg)
+![Last Frames Screen](/assets/images/lora_aprs_mobile_app/last-frames/screen.jpg)
 
 Each entry in the list is color-coded:
 
