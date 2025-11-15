@@ -12,7 +12,7 @@ The Settings screen allows you to configure all aspects of the app, from your st
 
 This section is for your primary station identification.
 
-![Station Info Settings](/assets/images/lora_aprs_mobile_app/settings/station-info.jpg)
+<img src="/assets/images/lora_aprs_mobile_app/settings/station-info.jpg" alt="Station Info Settings" style="max-width: 300px; width: 100%;">
 
 -   **Callsign**: Your amateur radio callsign, max. 6 characters length.
 -   **SSID**: Your Secondary Station Identifier. This **must** be a valid number between 0 and 15.
@@ -23,11 +23,13 @@ This section is for your primary station identification.
 
 Configure how the app connects to your TNC (LoRa APRS device). We currently support the KISS protocol over several transports.
 
-![Connection Settings](/assets/images/lora_aprs_mobile_app/settings/connection-settings.jpg)
+<img src="/assets/images/lora_aprs_mobile_app/settings/connection-settings.jpg" alt="Connection Settings" style="max-width: 300px; width: 100%;">
 
 -   **Bluetooth Classic (BT)**: For standard Bluetooth devices. You must pair your device in your phone's system settings first. You can use the **Open System Bluetooth Settings** button to get there quickly.
 -   **Bluetooth Low Energy (BLE)**: For modern, low-power devices.
 -   **TCPIP**: For connecting to a device over Wi-Fi or a local network. The default port is `8001`.
+
+Using these options you can connect all your devices like Tracker od Digi/iGate
 
 ---
 
@@ -35,7 +37,7 @@ Configure how the app connects to your TNC (LoRa APRS device). We currently supp
 
 These settings control APRS-specific behaviors, primarily related to messaging.
 
-![APRS Settings](/assets/images/lora_aprs_mobile_app/settings/aprs-settings.jpg)
+<img src="/assets/images/lora_aprs_mobile_app/settings/aprs-settings.jpg" alt="APRS Settings" style="max-width: 300px; width: 100%;">
 
 -   **Path**: The digipeater path to be used when sending messages (e.g., `WIDE1-1`, `WIDE2-1`, `WIDE1-1,WIDE2-1`).
 -   **Max Retries**: The maximum number of times the app will try to re-send an unacknowledged message.
@@ -47,7 +49,7 @@ These settings control APRS-specific behaviors, primarily related to messaging.
 
 This section customizes the 'Recent Stations' card on the Main Screen.
 
-![Recent Stations Settings](/assets/images/lora_aprs_mobile_app/settings/recent-stations-settings.jpg)
+<img src="/assets/images/lora_aprs_mobile_app/settings/recent-stations-settings.jpg" alt="Recent Stations Settings" style="max-width: 300px; width: 100%;">
 
 -   **Distance Display**: Choose how to calculate the distance to a heard station:
     -   `Current`: Distance from your _current_ location to the station.
@@ -62,7 +64,7 @@ This section customizes the 'Recent Stations' card on the Main Screen.
 
 General application preferences.
 
-![Other Settings](/assets/images/lora_aprs_mobile_app/settings/other-settings.jpg)
+<img src="/assets/images/lora_aprs_mobile_app/settings/other-settings.jpg" alt="Other Settings" style="max-width: 300px; width: 100%;">
 
 -   **Auto Connect**: When enabled, the app will automatically try to connect to your last used device as soon as you open the app. This saves you from having to press the "Start" button every time.
 
@@ -72,7 +74,7 @@ General application preferences.
 
 At the bottom of the settings screen, you will find several important utilities.
 
-![App Management Settings](/assets/images/lora_aprs_mobile_app/settings/app-management.jpg)
+<img src="/assets/images/lora_aprs_mobile_app/settings/app-management.jpg" alt="App Management Settings" style="max-width: 300px; width: 100%;">
 
 -   **Save Settings**: You must press this button to save any changes made on this screen.
 -   **Debug Logs**: Tapping this allows you to save and export the app's internal logs. This is extremely useful for diagnosing problems. You may be asked to send this log file to the developer to help fix a bug.
