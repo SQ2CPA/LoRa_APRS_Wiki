@@ -6,7 +6,7 @@ permalink: /lora_aprs_mobile_app/main_screen/
 
 The Main Screen is your central hub and command center. It provides an at-a-glance overview of your connection status, recent activity, and provides quick navigation to the app's core features.
 
-![LoRa APRS App Main Screen](/assets/images/lora_aprs_mobile_app/main-screen.jpg)
+<img src="/assets/images/lora_aprs_mobile_app/main-screen.jpg" alt="LoRa APRS App Main Screen" style="max-width: 300px; width: 100%;">
 
 ---
 
