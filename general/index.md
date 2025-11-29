@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: general
 title: General Information
-sidebar: general
+permalink: /general/index/
 ---
 
 # General Information
@@ -13,9 +13,10 @@ However, information here is generally not duplicated from the [LoRa-APRS.pl](ht
 ## What's in this section?
 
 This section covers:
-- Support channels and how to get help
-- Project organization and contribution guidelines
-- General resources applicable across multiple projects
-- Links to external resources and documentation
+
+-   Support channels and how to get help
+-   Project organization and contribution guidelines
+-   General resources applicable across multiple projects
+-   Links to external resources and documentation
 
 For specific information about LoRa APRS operation, devices, and network details, please visit [LoRa-APRS.pl](https://lora-aprs.pl).
