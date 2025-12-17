@@ -14,10 +14,40 @@ Our firmware uses status packets to announce key events, which can be helpful fo
 
 Below is a list of the status packets that your tracker can automatically transmit, along with their meanings.
 
-1.  **`Tracker started 434.855MHz 1200bps`**
+1.  **`Tracker started`** (with additional information)
 
     -   **When it's sent**: Transmitted shortly after the device boots up.
-    -   **Meaning**: This is an announcement that the tracker is online and operational. It conveniently includes the LoRa frequency and speed (e.g., 1200bps) it is currently configured to use, which is very useful for other users in the area.
+    -   **Meaning**: This is an announcement that the tracker is online and operational. The message includes additional information about the current configuration, which is very useful for other users in the area.
+
+    **Understanding the status suffix:**
+
+    The tracker appends configuration details after "Tracker started" to inform others about its operating mode:
+
+    **Geofence Mode (AUTO):**
+    -   **`Tracker started AUTO NOFIX`** - Geofence is enabled, but GPS hasn't determined the region yet
+    -   **`Tracker started AUTO PL`** - Geofence detected Poland region (uses 434.855 MHz)
+    -   **`Tracker started AUTO EU`** - Geofence detected Europe region (uses 433.775 MHz)
+    -   **`Tracker started AUTO UK`** - Geofence detected UK region (uses 439.9125 MHz)
+
+    **Manual Mode:**
+
+    When geofence is disabled, the status shows which frequency presets are enabled for **transmission (TX)**:
+    -   **PL** - Polish preset (434.855 MHz, 1200 bps)
+    -   **EU** - European preset (433.775 MHz, 1200 bps)
+    -   **UK** - UK preset (439.9125 MHz, 1200 bps)
+
+    Multiple presets can be active simultaneously, e.g., **`Tracker started PL EU`**
+
+    If you've configured a custom TX frequency/speed that doesn't match any preset, it will be shown explicitly:
+    -   **`Tracker started 432.500MHz 300bps`** - Custom TX frequency and speed
+
+    **Receive (RX) Configuration:**
+
+    If your receiver (RX) uses different settings than the transmitter (TX), the status will additionally show **`RX`** followed by the receive frequency and speed:
+    -   **`Tracker started PL RX 433.775MHz 1200bps`** - Transmitting on PL preset, but listening on EU frequency
+    -   **`Tracker started 434.855MHz 1200bps RX 433.775MHz 300bps`** - Custom TX and different RX settings
+
+    This is particularly useful when you want to transmit on one frequency but monitor traffic on another.
 
 2.  **`Remote update / Remote update (query)`**
 

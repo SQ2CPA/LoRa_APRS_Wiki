@@ -58,11 +58,33 @@ Here you can configure how the device connects to WiFi and how its own Access Po
 
 Configure the radio parameters for LoRa communication.
 
+    ➡️ The device will send status packets indicating which frequencies are in use. Learn more: [Status Packets](/lora_aprs_tracker/status-packets/)
+
+-   **Geofence (Auto Frequency)**:
+
+    -   **Enable Geofence**: Check this to automatically set TX/RX frequency based on your GPS location.
+    -   **Current Geofence Frequency**: Displays the current frequency determined by your GPS position (shows "waiting for GPS..." until a GPS fix is obtained).
+
+    **⚠ Important:** When Geofence is enabled, all frequency settings below (preset and custom) will be ignored. The frequency and speed will be automatically set based on your GPS location.
+
+-   **Multiple TX Frequencies (only TX, not RX!)**:
+
+    Select the frequency or frequencies on which beacons should be transmitted. You can select multiple frequencies to transmit on more than one band:
+
+    -   `434.855 MHz (1200bps)` — Preset frequency #1
+    -   `433.775 MHz (300bps)` — Preset frequency #2
+    -   `439.9125 MHz (300bps)` — Preset frequency #3
+    -   `Custom (below)` — Use the custom frequency settings defined in the TX section below
+
 -   **Transmitter (TX)**:
+
     -   **Enable TX**: Check this to enable the transmitter module for sending beacons.
-    -   **Frequency (MHz)**: The frequency for sending LoRa packets.
-    -   **Speed**: A dropdown list to select LoRa modulation parameters which determine the transmission speed (bps).
+    -   **Custom Frequency (MHz)**: The frequency for sending LoRa packets.
+    -   **Custom Speed**: A dropdown list to select LoRa modulation parameters which determine the transmission speed (bps).
     -   **Power (dBm)**: The transmission power of the radio module.
+
+        **Note:** The power value is passed directly (1:1) to the LoRa module without any modification or compensation for losses in the code. The actual output power depends on your hardware (antenna, connectors, cables, quality, etc.).
+
 -   **Receiver (RX)**:
     -   **Enable RX**: Check this to enable the receiver module. This must be active for the digipeater function to work.
     -   **Frequency (MHz)**: The frequency for listening for LoRa packets.
@@ -155,12 +177,28 @@ Manage the settings for the device's built-in display.
 
 -   **Enable display**: Check this box to activate the display.
 -   **Display timeout**: Specify the time in seconds after which the display will automatically turn off to save power. A value of `0` disables this feature.
+-   **Display OLED type** (not TFT!): Select the correct OLED display type for your hardware:
+
+    -   `SSD1306 (0.96")` — Default option for 0.96-inch OLED displays
+    -   `SH1106 (1.3")` — For 1.3-inch OLED displays
+
+    **Important:** Selecting the wrong display type will cause only visual issues, so don't worry:
+
+    -   If you have a **0.96" display** but select **1.3"**: You will see artifacts on the first vertical line on the left side of the screen.
+    -   If you have a **1.3" display** but select **0.96"**: Two vertical lines on the left side of the screen will be cut off.
 
 ### Advanced Settings
 
 -   **CPU frequency**: Select the operating frequency for the device's processor.
 -   **Reboot Interval (hrs)**: Automatically reboot the device after a set number of hours. `0` disables this.
 -   **Low Power Mode**: An experimental mode to reduce power consumption, primarily for solar-powered (PV) digipeaters.
+-   **GPS baudrate**: Configure the communication speed for the GPS module. Available options:
+
+    -   `Use board default` — Use the default baudrate configured for your board (recommended)
+    -   `2400` to `921600` — Manual baudrate selection (2400, 4800, 9600, 14400, 19200, 28800, 38400, 57600, 115200, 230400, 460800, 921600)
+
+    **Note:** Only change this setting if you know your GPS module requires a specific baudrate. Most GPS modules work correctly with the board default setting.
+
 -   **Ignored callsigns (blacklist)**: A comma-separated list of callsigns from which packets should be ignored.
 -   **Don't send blacklisted packets via TNC**: If checked, packets from blacklisted callsigns will not be forwarded to the TNC interfaces.
 -   **Admins callsigns (station operators)**: A comma-separated list of callsigns that have administrative privileges.
