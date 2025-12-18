@@ -14,6 +14,7 @@ However, information here is generally not duplicated from the [LoRa-APRS.pl](ht
 
 This section covers:
 
+-   Flashing firmware and updating devices
 -   Support channels and how to get help
 -   Project organization and contribution guidelines
 -   General resources applicable across multiple projects

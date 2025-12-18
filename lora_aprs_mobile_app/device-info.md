@@ -8,7 +8,7 @@ The Device Info screen provides detailed information and remote-control actions 
 
 <img src="/assets/images/lora_aprs_mobile_app/device-info/access-device-info.jpg" alt="Accessing Device Info" style="max-width: 300px; width: 100%;">
 
-> **Firmware Requirement:** Please note that this functionality is **only available** for devices running the official `SQ2CPA` firmware, which can be obtained from [flasher.sq2cpa.pl](https://flasher.sq2cpa.pl). It will not work with other firmwares.
+> **Firmware Requirement:** Please note that this functionality is **only available** for devices running the official `SQ2CPA` firmware, which can be obtained from [flasher.lora-aprs.pl](https://flasher.lora-aprs.pl). It will not work with other firmwares.
 
 ---
 
