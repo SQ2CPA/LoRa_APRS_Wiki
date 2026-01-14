@@ -92,5 +92,37 @@ These commands perform sensitive actions and can only be executed by callsigns l
     -   **Response**: `AP started` or an error message if it cannot be enabled.
 
 8.  **`?APRSELP`**
+
     -   **Action**: Forces the device to exit from low-power mode. This command is only available if the low-power mode is enabled in the configuration.
     -   **Response**: `Exited low power mode!`
+
+9.  **`?APRSNET`**
+
+    -   **Action**: Reloads the network connection. If the device is configured as a Wi-Fi client, it will attempt to reconnect. If it cannot connect or is configured as an Access Point, it will start the AP mode.
+    -   **Response**: Confirmation of the network reload action.
+
+10. **`?APRSTX ON`** / **`?APRSTX OFF`**
+
+    -   **Action**: Enables or disables the LoRa transmitter.
+    -   **Response**: Confirmation that LoRa TX has been turned on or off.
+    -   **Note**: When TX is OFF, the device will not transmit any LoRa packets.
+
+11. **`?APRSDIGI OFF`** / **`?APRSDIGI OWN`** / **`?APRSDIGI WIDE1`** / **`?APRSDIGI WIDE2`**
+    -   **Action**: Sets the digipeater mode.
+        -   `OFF` - Disables digipeating functionality.
+        -   `OWN` - Digipeats only packets with the device's own callsign in the path.
+        -   `WIDE1` - Digipeats packets with WIDE1-1 in the path.
+        -   `WIDE2` - Digipeats packets with WIDE2-1, WIDE2-2, WIDE1-1 in the path.
+    -   **Response**: Confirmation of the digi mode change.
+
+---
+
+## Radio Range Testing
+
+The device supports automatic responses to PING messages for radio range testing purposes.
+
+-   **Message**: `PING`
+    -   **Action**: When a message with the content "PING" is received via radio (RF), the device automatically sends a response.
+    -   **Response Path**: The response is sent with the `RFONLY` path, ensuring it is transmitted only via radio and not forwarded to APRS-IS.
+    -   **Purpose**: This feature is used for testing radio coverage and signal reach.
+    -   **Note**: This automatic response only works for messages received via radio (RF). Messages received from APRS-IS will not trigger this response.

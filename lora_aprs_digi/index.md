@@ -4,7 +4,7 @@ title: Home
 permalink: /lora_aprs_digi/index/
 ---
 
-> This documentation was last updated on 25 October 2025, and applies to firmware version **v1.0.4**.
+> This documentation was last updated on 10 January 2026, and applies to firmware version **v1.0.5**.
 
 **LoRa APRS Digi/iGate** is a software solution designed with a strong focus on RF-based APRS network infrastructure at **1200 bps**. This project prioritizes reliable radio-frequency (RF) communication and its functionality as a high-performance **Digipeater** and **IGate**, rather than acting as a tracker sending its own position. If you're looking for a fast and efficient solution to build out the LoRa APRS network that respects APRS, this is the software for you.
 
