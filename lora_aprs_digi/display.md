@@ -16,6 +16,8 @@ If you want to monitor what your station is doing, there are much better options
 
 These tools provide far more information and are accessible from anywhere on your network, making them a practical choice for station monitoring.
 
+This is what the display looks like after flashing the firmware. Note that the firmware starts listening for RF packets immediately after boot, so you may see a received station right away if there is any activity on the frequency.
+
 <img src="/assets/images/lora_aprs_digi/display.jpg" alt="LoRa APRS Digi/iGate Display" style="max-width: 400px; width: 100%;">
 
 ---
