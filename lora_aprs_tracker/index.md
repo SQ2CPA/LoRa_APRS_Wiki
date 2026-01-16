@@ -22,7 +22,12 @@ Getting your LoRa APRS Tracker running is easy. Follow these steps in order:
 2.  **Configuration**: Once the firmware is installed, you'll need to configure your station's parameters, such as your callsign, WiFi, and LoRa settings.
     - **➡️ [Go to Configuration Guide](/lora_aprs_tracker/configuration/)**
 
-3.  **Learn More**: After completing the basic setup, you can explore the rest of the wiki to understand advanced features like updating the firmware and more.
+3.  **Using Your Tracker**: Learn how to physically interact with your device and read information from the display.
+    - **➡️ [Button Functions](/lora_aprs_tracker/button-functions/)** - How to use buttons on your specific device
+    - **➡️ [Display Screens](/lora_aprs_tracker/display/)** - Understanding the information shown on your tracker
+    - **➡️ [Menu System](/lora_aprs_tracker/menu/)** - Access device functions via the on-screen menu
+
+4.  **Learn More**: After completing the basic setup, you can explore the rest of the wiki to understand advanced features like updating the firmware and more.
 
 ---
 
