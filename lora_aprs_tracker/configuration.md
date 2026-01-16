@@ -56,6 +56,12 @@ Here you can configure how the device connects to WiFi and how its own Access Po
 
 Configure the radio parameters for LoRa communication. This section allows selecting preset transmission frequencies or defining custom parameters for the transmitter (TX) and receiver (RX).
 
+-   **Geofence (Auto Frequency)**:
+    -   **Enable Geofence**: When enabled, the device will automatically set the TX/RX frequency and speed based on your current GPS location. This is useful for mobile stations that travel across different regions with different frequency allocations.
+    -   **Current Geofence Frequency**: Displays the frequency currently selected by the geofence system based on your GPS position.
+    -   ⚠️ **Important**: When Geofence is enabled, all manual frequency settings below (both preset and custom) will be ignored.
+    -   ➡️ You can read more about Geofence: [Geofence](/lora_aprs_tracker/geofence/)
+
 -   **TX Frequency Selection**: Select one or more preset checkboxes to transmit beacons on specific frequencies with predefined speeds.
     -   `434.855 MHz (1200bps)`
     -   `433.775 MHz (300bps)`
@@ -65,6 +71,7 @@ Configure the radio parameters for LoRa communication. This section allows selec
     -   **Custom Frequency (MHz)**: Manually define the frequency for sending LoRa packets if the "Custom" option is selected.
     -   **Custom Speed**: A dropdown list to select custom LoRa modulation parameters (Bandwidth, Coding Rate, Spreading Factor) which determine the transmission speed (bps).
     -   **Power (dBm)**: The transmission power of the radio module.
+    -   **Preamble Length**: The length of the preamble in symbols. Minimum value is 6.
 -   **Receiver (RX)**:
     -   **Frequency (MHz)**: The frequency for listening for LoRa packets.
     -   **Speed**: The LoRa speed setting for reception, which must match the transmitter settings of the stations you want to hear.
