@@ -17,6 +17,8 @@ The software is designed to be plug-and-play. It automatically detects the type 
 
 To use this feature, simply enable Bluetooth in the `Configuration` page and then pair your computer or smartphone with the device.
 
+You can also enable or disable Bluetooth directly from the device via the [Menu](/lora_aprs_tracker/menu/).
+
 ---
 
 ## Hardware Support and Bluetooth Types

@@ -26,7 +26,7 @@ This is a **true "off" state**.
 
 This method is a clever software workaround for devices that lack a dedicated power management chip.
 
--   **How it works**: On devices like the **Heltec Wireless Tracker**, there is no chip to physically cut the power. Instead, when you long-press the button, the firmware puts the main processor into its lowest possible power mode, known as **"deep sleep."** In this state, the processor is almost entirely shut down, but it keeps just enough circuitry active to listen for a wake-up signal (in this case, a press of the reset/power-on button).
+-   **How it works**: On devices like the **Heltec Wireless Tracker**, there is no chip to physically cut the power. Instead, when you select the power off option from the [Menu](/lora_aprs_tracker/menu/), the firmware puts the main processor into its lowest possible power mode, known as **"deep sleep."** In this state, the processor is almost entirely shut down, but it keeps just enough circuitry active to listen for a wake-up signal (in this case, a press of the reset/power-on button).
 -   **Battery Drain**: While extremely low, there is still a **small but constant power draw** to maintain this wake-up capability. It's not zero. Leaving the device in this state for many weeks or months _will_ eventually drain the battery.
 -   **The Critical Limitation**: This software method **does not inherently protect the battery from over-discharge**. Because the device is never truly off, it will continue to draw a tiny amount of current. If the battery is already low, leaving it in this state for an extended period can drain it below the safe voltage limit, potentially destroying the battery cell.
 
