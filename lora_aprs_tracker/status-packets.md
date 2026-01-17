@@ -32,7 +32,7 @@ Below is a list of the status packets that your tracker can automatically transm
 
     When geofence is disabled, the status shows which frequency presets are enabled for **transmission (TX)**:
     - **PL** - Polish preset (434.855 MHz, 1200 bps)
-    - **EU** - European preset (433.775 MHz, 1200 bps)
+    - **EU** - European preset (433.775 MHz, 300 bps)
     - **UK** - UK preset (439.9125 MHz, 1200 bps)
 
     Multiple presets can be active simultaneously, e.g., **`Tracker started PL EU`**
@@ -43,7 +43,7 @@ Below is a list of the status packets that your tracker can automatically transm
     **Receive (RX) Configuration:**
 
     If your receiver (RX) uses different settings than the transmitter (TX), the status will additionally show **`RX`** followed by the receive frequency and speed:
-    - **`Tracker started PL RX 433.775MHz 1200bps`** - Transmitting on PL preset, but listening on EU frequency
+    - **`Tracker started PL RX 433.775MHz 300bps`** - Transmitting on PL preset, but listening on EU frequency
     - **`Tracker started 434.855MHz 1200bps RX 433.775MHz 300bps`** - Custom TX and different RX settings
 
     This is particularly useful when you want to transmit on one frequency but monitor traffic on another.
