@@ -36,6 +36,7 @@ The display has two main modes of operation:
 2. **Temporary Messages** - Brief messages that appear during specific events and then disappear
 
 Every screen has a **header bar** at the top that shows:
+
 - **Battery percentage** (left side)
 - **Current screen name** (center)
 - **Time in UTC** from GPS (right side)
@@ -49,6 +50,7 @@ If you are not sure which button is the USER button on your device, see the [But
 <img src="/assets/images/lora_aprs_tracker/display/screens/main.jpg" alt="Main Screen" style="max-width: 400px; width: 100%;">
 
 The main screen displays:
+
 - Your callsign
 - Maidenhead locator from GPS
 - Bluetooth and WiFi status (ON/OFF) - can be toggled in the [Menu](/lora_aprs_tracker/menu/)
@@ -58,13 +60,18 @@ The main screen displays:
 
 <img src="/assets/images/lora_aprs_tracker/display/screens/received.jpg" alt="Received Screen" style="max-width: 400px; width: 100%;">
 
-A list of received frames (not only beacons - can include messages, etc.) along with the distance from your position. If distance is missing, it may be because the received frame (e.g., a message) does not contain position data.
+A list of received frames (not only beacons - can include messages, etc.) along with the distance from your position.
+
+> ⚠️ **Important:** The number displayed next to each callsign represents the **DISTANCE** (in km or meters) - not time in minutes!
+
+If distance is missing, it may be because the received frame (e.g., a message) does not contain position data. If you are certain that you received a beacon (position packet) and the distance is still missing, please [contact us](https://github.com/SQ2CPA/LoRa_APRS_Tracker/issues) - this may indicate a bug that we would like to investigate.
 
 ### POSITION
 
 <img src="/assets/images/lora_aprs_tracker/display/screens/position.jpg" alt="Position Screen" style="max-width: 400px; width: 100%;">
 
 GPS data including:
+
 - Number of satellites
 - Latitude
 - Longitude
@@ -76,6 +83,7 @@ GPS data including:
 <img src="/assets/images/lora_aprs_tracker/display/screens/info.jpg" alt="Info Screen" style="max-width: 400px; width: 100%;">
 
 Firmware information:
+
 - Firmware version
 - Firmware build date
 
@@ -84,6 +92,7 @@ Firmware information:
 <img src="/assets/images/lora_aprs_tracker/display/screens/network.jpg" alt="Network Screen" style="max-width: 400px; width: 100%;">
 
 WiFi network information:
+
 - Network type (Client or AP)
 - IP address
 
@@ -92,16 +101,22 @@ WiFi network information:
 <img src="/assets/images/lora_aprs_tracker/display/screens/last_rx.jpg" alt="Last RX Screen" style="max-width: 400px; width: 100%;">
 
 Information about the last received frame (not station, so distance may be missing if it was a message, etc.):
+
 - Callsign with SSID
 - RSSI (signal strength)
 - SNR (signal-to-noise ratio)
 - Distance (if available)
+
+> ⚠️ **Important:** The distance value represents the **DISTANCE** (in km or meters) - not time in minutes!
+
+If distance is missing, it may be because the received frame (e.g., a message) does not contain position data. If you are certain that you received a beacon (position packet) and the distance is still missing, please [contact us](https://github.com/SQ2CPA/LoRa_APRS_Tracker/issues) - this may indicate a bug that we would like to investigate.
 
 ### POWER
 
 <img src="/assets/images/lora_aprs_tracker/display/screens/power.jpg" alt="Power Screen" style="max-width: 400px; width: 100%;">
 
 Power information for your device:
+
 - Internal (battery) voltage
 - External voltage
 - Charging status
@@ -114,7 +129,7 @@ Power information for your device:
 
 <img src="/assets/images/lora_aprs_tracker/display/temporary-info.jpg" alt="Temporary Message" style="max-width: 400px; width: 100%;">
 
-*Example of a temporary message showing OTA update progress.*
+_Example of a temporary message showing OTA update progress._
 
 During operation, the display will briefly show temporary messages for various events. These messages appear for a short time and then the screen returns to the current view.
 
