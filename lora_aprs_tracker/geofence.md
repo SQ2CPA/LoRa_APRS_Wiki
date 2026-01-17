@@ -46,7 +46,7 @@ The geofence feature supports the following regional frequency presets:
 | Region                  | Frequency    | Speed    |
 | ----------------------- | ------------ | -------- |
 | **PL** (Poland)         | 434.855 MHz  | 1200 bps |
-| **EU** (Europe)         | 433.775 MHz  | 1200 bps |
+| **EU** (Europe)         | 433.775 MHz  | 300 bps  |
 | **UK** (United Kingdom) | 439.9125 MHz | 1200 bps |
 
 ---
