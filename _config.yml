@@ -22,6 +22,7 @@ defaults:
 plugins:
     - jekyll-feed
     - jekyll-include-cache
+    - jekyll-sitemap
 
 exclude:
     - .sass-cache/
