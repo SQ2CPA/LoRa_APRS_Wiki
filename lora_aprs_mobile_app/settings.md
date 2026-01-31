@@ -14,22 +14,15 @@ This section is for your primary station identification.
 
 <img src="/assets/images/lora_aprs_mobile_app/settings/station-info.jpg" alt="Station Info Settings" style="max-width: 300px; width: 100%;">
 
--   **Callsign**: Your amateur radio callsign, max. 6 characters length.
--   **SSID**: Your Secondary Station Identifier. This **must** be a valid number between 0 and 15.
+-   **Callsign**: Your amateur radio callsign, max. 6 characters length. This callsign is used as a user identifier and is **not** included in any transmitted frames. Its only purpose is to associate incoming messages with your station.
 
 ---
 
-## Connection Settings
+## Manage Devices
 
-Configure how the app connects to your TNC (LoRa APRS device). We currently support the KISS protocol over several transports.
+To add a device, tap the **Manage Devices** button visible in the settings screen. This will take you to the device management screen where you can add and configure all your devices.
 
-<img src="/assets/images/lora_aprs_mobile_app/settings/connection-settings.jpg" alt="Connection Settings" style="max-width: 300px; width: 100%;">
-
--   **Bluetooth Classic (BT)**: For standard Bluetooth devices. You must pair your device in your phone's system settings first. You can use the **Open System Bluetooth Settings** button to get there quickly.
--   **Bluetooth Low Energy (BLE)**: For modern, low-power devices.
--   **TCPIP**: For connecting to a device over Wi-Fi or a local network. The default port is `8001`.
-
-Using these options you can connect all your devices like Tracker od Digi/iGate
+For more details, see the [Multi-Device management page](/lora_aprs_mobile_app/multi-device/).
 
 ---
 
@@ -79,3 +72,4 @@ At the bottom of the settings screen, you will find several important utilities.
 -   **Save Settings**: You must press this button to save any changes made on this screen.
 -   **Debug Logs**: Tapping this allows you to save and export the app's internal logs. This is extremely useful for diagnosing problems. You may be asked to send this log file to the developer to help fix a bug.
 -   **Allow working in background**: This button opens the `https://dontkillmyapp.com/` webpage. This external site provides instructions on how to adjust your specific Android phone's settings to prevent the system from "killing" (shutting down) the app when it's running in the background. **This step is required for the app to function correctly in the background.**
+-   **Factory Reset**: Clears all app data and restarts the application. Note that for a truly thorough cleanup, you should clear the app data from Android system settings (Settings → Apps → LoRa APRS → Storage → Clear Data).
