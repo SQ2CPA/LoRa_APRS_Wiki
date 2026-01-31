@@ -27,13 +27,14 @@ The app is currently in active development. You can download the latest version 
 
 ---
 
-## How to Start
+## Quick Start
 
 Getting your LoRa APRS App running is easy. Follow these steps in order:
 
 1.  **Installation**: First, download and install the app from the link above.
-2.  **Configuration**: Connect the app to your LoRa APRS device. The app supports Bluetooth (BLE & Classic) and TCP/IP (WiFi). Your device must support the **KISS TNC protocol**. Once connected, configure your station's parameters, such as your callsign and other preferences in the app settings.
-3.  **Explore Features**: After setup, explore the app's features, like the messaging interface, station lists, and map view.
+2.  **Configure your app**: Set up your callsign, connect to your TNC device, and adjust preferences. Head over to the **[Settings guide](/lora_aprs_mobile_app/settings/)** for a step-by-step walkthrough.
+3.  **Set up Multi Device**: Learn how to add and switch between multiple TNC devices seamlessly. Check the **[Multi Device guide](/lora_aprs_mobile_app/multi-device/)** for details.
+4.  **Start messaging**: Understand how the messaging system works, including sending, receiving, and message acknowledgments. Read the **[Messages guide](/lora_aprs_mobile_app/messages/)** to get started.
 
 ---
 
