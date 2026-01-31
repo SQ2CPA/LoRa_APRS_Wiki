@@ -4,9 +4,9 @@ title: Home
 permalink: /lora_aprs_mobile_app/index/
 ---
 
-> This documentation was last updated on 15 November 2025, and applies to app version **15.11.2025**.
+> This documentation was last updated on 25 January 2026, and applies to app version **v1.0.0**.
 >
-> **Note:** The LoRa APRS App application has not yet begun full versioning. This will commence with the stable v1.0.0 release.
+> **Note:** Versioning for the LoRa APRS App application started with the stable v1.0.0 release. The changelog can be found here: https://github.com/SQ2CPA/LoRa_APRS_Mobile_App/releases
 
 **LoRa APRS App** is a mobile application for amateur radio operators, designed with a strong focus on **messaging and network monitoring**. Built by hams, for hams, this app prioritizes solid, reliable communication without the bloat. It does **not** send its own position beacons, acting as a dedicated interface for your LoRa APRS TNC but also works for AFSK VHF APRS.
 
@@ -40,7 +40,9 @@ Getting your LoRa APRS App running is easy. Follow these steps in order:
 ## Key Features
 
 -   **Pure Messaging Focus**: No position beacons, no unnecessary features. Just solid, reliable APRS messaging.
--   **Set & Forget**: Runs in the background and automatically reconnects to your TNC.
+-   **Multilang Support**: Available in German, English, Spanish, French, Italian, Polish, and Portuguese.
+-   **Multidevice Support**: Seamlessly switch between multiple connected TNC devices.
+-   **Set & Forget**: Runs reliably in the background and automatically reconnects to your TNC.
 -   **Flexible Connectivity**: Supports **Bluetooth (BLE & Classic)** and **TCP/IP over Wi-Fi** for connecting to your devices.
 -   **KISS TNC Protocol**: Designed to work with any device that supports the standard KISS TNC protocol.
 -   **Smart Station Lists**: Automatically filters for active, message-capable stations. Old stations are auto-cleaned from the list.
@@ -56,5 +58,6 @@ While many APRS apps focus on tracking, this project takes a different approach.
 -   **Not a Tracker**: This app is **not** an APRS tracker. It will not send your phone's location. It is a client terminal for an external TNC.
 -   **Clean & Simple**: The goal is to provide a clean, reliable interface for sending and receiving messages and monitoring the network. Operations are clear and easy to understand.
 -   **Smart Integration**: The app is designed to work perfectly with **SQ2CPA LoRa APRS firmware** ([flasher.lora-aprs.pl](https://flasher.lora-aprs.pl)), but it remains compatible with other standard KISS TNC devices.
+-   **No APRS-IS Connection**: The application does not connect directly to APRS-IS servers, aligning with its off-grid and TNC-centric design philosophy.
 -   **Background Reliability**: The app is built to run reliably in the background, ensuring you are always connected to the LoRa APRS network and ready to receive messages.
 -   **True Off-Grid Operation**: The app requires **no internet connection** and **no device location (GPS)** access to function. Its only requirement is a connection to your TNC, ensuring full capability in any off-grid scenario.
