@@ -18,6 +18,7 @@ These boards are ready-to-use (after flashing) and are widely supported by the c
 | **Heltec** | Wireless Stick Lite | V3 | [🛒 Product details](https://go.lora-aprs.pl/product/heltec-wireless-stick-lite-v3){:target="_blank"} |
 | **Heltec** | WiFi LoRa32 | V3, V3.2 | [🛒 Product details](https://go.lora-aprs.pl/product/heltec-wifi-lora32-v3){:target="_blank"} |
 | **Heltec** | HT-CT62 | | [🛒 Product details](https://go.lora-aprs.pl/product/heltec-ht-ct62){:target="_blank"} |
+| **QRP Labs** | LightGateway Plus | 1.0 | [🛒 Product details](https://shop.qrp-labs.com/lora/lightgatewayplus){:target="_blank"} |
 
 ---
 
