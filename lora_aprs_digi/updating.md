@@ -6,6 +6,10 @@ permalink: /lora_aprs_digi/updating/
 
 There are several ways to update your device to the latest firmware. The recommended methods are **Manual OTA** or **Remote OTA**, as they preserve your device's settings.
 
+When you open the **"Update"** section in the device's web interface and a newer firmware version is available, a notification will appear at the top of the page letting you know an update is ready to install.
+
+![New firmware update notification on the device's Update page](/assets/images/lora_aprs_digi/update-alert.jpg)
+
 ---
 
 ## Method 1: Via Web Flasher (Erases Settings)
