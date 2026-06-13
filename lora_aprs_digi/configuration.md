@@ -110,6 +110,8 @@ Control how your station's position beacon is transmitted.
 
 Configure the device to act as a digital repeater (digipeater).
 
+➡️ For a full explanation of how packets are processed, path handling, legacy compatibility and the TEMP PATH feature, see: [Digipeater Logic](/lora_aprs_digi/digi-logic/)
+
 - **Digi mode**:
     - `Disabled`: The digipeater function is off.
     - `Repeat only if own call or alias is addressed`: The device will only repeat packets specifically addressed to its callsign (or to the TEMP PATH Alias below).
