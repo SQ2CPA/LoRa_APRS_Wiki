@@ -45,6 +45,8 @@ This section contains the basic identification settings for your station on the 
 
 Here you can configure how the device connects to WiFi and how its own Access Point behaves.
 
+➡️ For a full explanation of how the device switches between AP, client and fallback modes, see: [WiFi Logic](/lora_aprs_digi/wifi-logic/)
+
 - **Connect to WiFi Network**:
     - **SSID**: The name of the WiFi network you want the device to connect to.
     - **Password**: The password for that WiFi network.

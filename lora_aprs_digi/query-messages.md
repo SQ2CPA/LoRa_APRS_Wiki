@@ -66,54 +66,82 @@ These commands perform sensitive actions and can only be executed by callsigns l
     -   **Action**: Forces the device to transmit a beacon packet as soon as possible.
     -   **Response**: `Beacon will be send in a while`
 
-3.  **`?APRSU`**
+3.  **`?APRSST`**
+
+    -   **Action**: Re-sends the initial telemetry packets (the telemetry parameter, unit and equation definitions). Useful when an APRS server or client has lost the telemetry definitions and is no longer interpreting your telemetry values correctly.
+    -   **Response**: `Telemetry initialization resend queued`, or `Telemetry is not active` if telemetry is disabled.
+    -   ➡️ Learn more about telemetry: [APRS Telemetry](/lora_aprs_digi/telemetry/)
+
+4.  **`?APRSU`**
 
     -   **Action**: Initiates a remote Over-The-Air (OTA) firmware update to the latest available version.
     -   **Response**: `Remote update started to latest`
 
-4.  **`?APRSU <version>`**
+5.  **`?APRSU <version>`**
 
     -   **Action**: Initiates a remote OTA firmware update to a specific version number.
     -   **Response**: `Remote update started to <version>` (e.g., `Remote update started to v1.2.3`)
 
-5.  **`?APRSMR`**
+6.  **`?APRSMR`**
 
     -   **Action**: Resets the packet counters (TX, RX, Digi) back to zero.
     -   **Response**: `Metrics reset complete`
 
-6.  **`?APRSGA`**
+7.  **`?APRSGA`**
 
     -   **Action**: Retrieves the device's local IP address on the Wi-Fi network.
     -   **Response**: The local IP address (e.g., `192.168.1.100`) or `Not connected` if not on Wi-Fi.
 
-7.  **`?APRSAP`**
+8.  **`?APRSAP`**
 
     -   **Action**: Manually enables the Wi-Fi Access Point (AP) mode. This is useful for reconfiguring the device if it cannot connect to a saved Wi-Fi network.
     -   **Response**: `AP started` or an error message if it cannot be enabled.
 
-8.  **`?APRSELP`**
+9.  **`?APRSELP`**
 
     -   **Action**: Forces the device to exit from low-power mode. This command is only available if the low-power mode is enabled in the configuration.
     -   **Response**: `Exited low power mode!`
 
-9.  **`?APRSNET`**
+10. **`?APRSNET`**
 
     -   **Action**: Reloads the network connection. If the device is configured as a Wi-Fi client, it will attempt to reconnect. If it cannot connect or is configured as an Access Point, it will start the AP mode.
-    -   **Response**: Confirmation of the network reload action.
+    -   **Response**: `WiFi reloading started`
 
-10. **`?APRSTX ON`** / **`?APRSTX OFF`**
+11. **`?APRSTX ON`** / **`?APRSTX OFF`**
 
     -   **Action**: Enables or disables the LoRa transmitter.
-    -   **Response**: Confirmation that LoRa TX has been turned on or off.
-    -   **Note**: When TX is OFF, the device will not transmit any LoRa packets.
+    -   **Response**: `LoRa TX enabled` or `LoRa TX disabled`. Sending `?APRSTX` without a parameter returns the usage hint `Use ?APRSTX ON/OFF`.
+    -   **Note**: When TX is OFF, the device will not transmit any LoRa packets. Turning TX **OFF reboots the device immediately**; turning it **ON** schedules a restart a few seconds later to apply the change.
 
-11. **`?APRSDIGI OFF`** / **`?APRSDIGI OWN`** / **`?APRSDIGI WIDE1`** / **`?APRSDIGI WIDE2`**
-    -   **Action**: Sets the digipeater mode.
+12. **`?APRSDIGI OFF`** / **`?APRSDIGI OWN`** / **`?APRSDIGI WIDE1`** / **`?APRSDIGI W1W2`** / **`?APRSDIGI WIDE2`**
+    -   **Action**: Sets the digipeater mode (this mirrors the **Digi mode** dropdown on the configuration page). The device restarts a few seconds after the change to apply it.
         -   `OFF` - Disables digipeating functionality.
-        -   `OWN` - Digipeats only packets with the device's own callsign in the path.
-        -   `WIDE1` - Digipeats packets with WIDE1-1 in the path.
-        -   `WIDE2` - Digipeats packets with WIDE2-1, WIDE2-2, WIDE1-1 in the path.
-    -   **Response**: Confirmation of the digi mode change.
+        -   `OWN` - Repeats only packets addressed to the device's own callsign (or alias).
+        -   `WIDE1` - Acts as a WIDE1 (fill-in) digi.
+        -   `W1W2` - Acts as a combined WIDE1+WIDE2 digi (the alias `WIDE12` also works).
+        -   `WIDE2` - Acts as a WIDE2 digi (first unused address only).
+    -   **Response**: Confirmation of the digi mode change (e.g. `Digi mode set to W1+W2`). Sending `?APRSDIGI` without a parameter returns the usage hint `Use ?APRSDIGI OFF/OWN/WIDE1/W1W2/WIDE2`.
+    -   ➡️ For what each mode does, see [Configuration → Digipeater Settings](/lora_aprs_digi/configuration/#digipeater-settings).
+
+13. **`?APRSCD`**
+
+    -   **Action**: Returns a compact, machine-readable status dump of the device. This command is intended primarily for applications (such as the mobile app) rather than for manual reading.
+    -   **Response**: A single pipe-delimited (`|`) line with the following fields, in order:
+
+        ```
+        path|digiMode|wifiActive,wifiRSSI|beaconRF,beaconIS,beaconInterval|txPower|tncMode|aprsisServer|wx|syslogEnabled,syslogMode|ramUsed/ramTotal
+        ```
+
+        -   **path**: Beacon path, or `-` if none.
+        -   **digiMode**: Current digi mode (`0`–`4`).
+        -   **wifiActive,wifiRSSI**: `1`/`0` for Wi-Fi connected, followed by the RSSI in dBm (`0` when not connected).
+        -   **beaconRF,beaconIS,beaconInterval**: Beacon-via-RF flag, beacon-via-APRS-IS flag, and interval in minutes.
+        -   **txPower**: LoRa TX power in dBm.
+        -   **tncMode**: Bitmask — `1` = TNC server enabled, `2` = serial TNC enabled (USB or hardware), `3` = both.
+        -   **aprsisServer**: Configured APRS-IS server.
+        -   **wx**: `1`/`0` for WX telemetry enabled.
+        -   **syslogEnabled,syslogMode**: Syslog enabled flag and selected mode.
+        -   **ramUsed/ramTotal**: Heap usage in KB.
 
 ---
 
