@@ -89,6 +89,13 @@ body {
     overflow-y: auto;
 }
 
+.version-badge {
+    font-size: 0.7em;
+    font-weight: 700;
+    color: var(--primary-color);
+    vertical-align: middle;
+}
+
 .sidebar-nav h3 {
     margin-top: 0;
     color: var(--primary-color);
