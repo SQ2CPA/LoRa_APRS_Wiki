@@ -13,9 +13,9 @@ This firmware supports Terminal Node Controller (TNC) functionality over Bluetoo
 The software is designed to be plug-and-play. It automatically detects the type of Bluetooth supported by your hardware and activates the correct mode. You do not need to manually select between Bluetooth Classic and BLE.
 
 -   **Device Name**: Your tracker will be discoverable with a Bluetooth name identical to the **callsign** you set in the configuration.
--   **Protocol**: The only supported TNC protocol is **KISS**. We do not support the TNC2 format, as we consider it to be an inferior and less reliable format for modern applications.
+-   **Protocol**: Both **KISS** and **TNC2** are supported. You can choose between them with the **Bluetooth mode** setting on the `Configuration` page. The same mode is used regardless of whether your hardware uses Bluetooth Classic or BLE.
 
-To use this feature, simply enable Bluetooth in the `Configuration` page and then pair your computer or smartphone with the device.
+To use this feature, simply enable Bluetooth in the `Configuration` page, select the desired mode, and then pair your computer or smartphone with the device.
 
 You can also enable or disable Bluetooth directly from the device via the [Menu](/lora_aprs_tracker/menu/).
 

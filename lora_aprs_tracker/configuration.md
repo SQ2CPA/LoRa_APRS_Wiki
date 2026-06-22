@@ -69,19 +69,31 @@ Configure the radio parameters for LoRa communication. This section allows selec
     -   **Custom (below)**: Check this to manually set the transmitter parameters in the fields below.
 -   **Transmitter (TX) - Custom Settings**:
     -   **Custom Frequency (MHz)**: Manually define the frequency for sending LoRa packets if the "Custom" option is selected.
-    -   **Custom Speed**: A dropdown list to select custom LoRa modulation parameters (Bandwidth, Coding Rate, Spreading Factor) which determine the transmission speed (bps).
+    -   **Custom Speed**: A dropdown list to select the LoRa speed. The presets are `BW 125kHz CR 4:5 SF 12 (300bps)` and `BW 125kHz CR 4:7 SF 9 (1200bps)`. Selecting **Custom** reveals additional fields to define the modulation parameters manually:
+        -   **Custom SF**: Spreading Factor (`SF5` to `SF12`).
+        -   **Custom CR**: Coding Rate (`4:5`, `4:6`, `4:7`, `4:8`).
+        -   **Custom BW**: Bandwidth (`62.5 kHz`, `125 kHz`, `250 kHz`, `500 kHz`).
     -   **Power (dBm)**: The transmission power of the radio module.
     -   **Preamble Length**: The length of the preamble in symbols. Minimum value is 6.
 -   **Receiver (RX)**:
     -   **Frequency (MHz)**: The frequency for listening for LoRa packets.
-    -   **Speed**: The LoRa speed setting for reception, which must match the transmitter settings of the stations you want to hear.
+    -   **Speed**: The LoRa speed setting for reception, which must match the transmitter settings of the stations you want to hear. Like the TX speed, selecting **Custom** reveals **Custom SF**, **Custom CR**, and **Custom BW** fields to set the reception parameters manually.
 
 ### Beacon Settings
 
 Control how your position beacons are transmitted.
 
 -   **Beacon Interval (seconds)**: How often the device sends its position beacon.
--   **Smart beacon**: Enables an algorithm that adjusts the beacon rate based on speed and direction changes. This is useful for mobile stations to report their position more frequently when turning or changing speed, and less frequently when stationary or moving in a straight line. Options are `Disabled`, `Car`, `Bike`, or `Runner`.
+-   **Smart beacon**: Enables an algorithm that adjusts the beacon rate based on speed and direction changes. This is useful for mobile stations to report their position more frequently when turning or changing speed, and less frequently when stationary or moving in a straight line. Options are `Disabled`, `Car`, `Bike`, `Runner`, or `Custom`.
+    -   Selecting **Custom** reveals additional fields so you can define your own Smart Beacon profile. Speed thresholds are entered in km/h and converted internally to knots before being stored:
+        -   **Slow Rate (seconds)**: The slowest beacon interval, used when moving slowly or stationary.
+        -   **Slow Speed Threshold (km/h)**: Below this speed the slow rate is used.
+        -   **Fast Rate (seconds)**: The fastest beacon interval, used at or above the fast speed threshold.
+        -   **Fast Speed Threshold (km/h)**: At or above this speed the fast rate is used.
+        -   **Min TX Distance (m)**: The minimum distance to travel before sending another beacon.
+        -   **Min Turn Beacon Delay (seconds)**: The minimum time between two turn-triggered beacons.
+        -   **Turn Min Angle (deg)**: The minimum change of heading required to trigger a turn beacon.
+        -   **Turn Slope**: A factor that adjusts turn sensitivity based on speed.
 -   **Send Extra Info**: Allows you to include additional data in your position beacon. Options are `None`, `Course + Speed`, or `Altitude`.
 -   **Send Beacon**: A button to manually trigger a single beacon transmission immediately.
 
@@ -107,11 +119,11 @@ Modes like `WIDE1`, `WIDE2` are used by dedicated, stationary digipeaters to rep
 
 The digipeater function in this tracker is **personal and targeted**. Its purpose is to relay packets from _your own_ specific device to help it reach another station when direct range is insufficient. This approach prevents a mobile tracker from creating unnecessary network congestion by repeating all local traffic.
 
-<!-- ### Telemetry Settings
+### Telemetry Settings
 
 -   **Enable Telemetry**: Check this box to enable the transmission of telemetry data.
 
-    -   ➡️ You can read more about Telemetry: [How Telemetry works](/lora_aprs_tracker/telemetry/) -->
+    -   ➡️ You can read more about Telemetry: [How Telemetry works](/lora_aprs_tracker/telemetry/)
 
 ### Voltage Monitoring
 
@@ -128,21 +140,27 @@ This section allows you to monitor and report the voltage of the internal batter
 Manage the device's power-saving features, especially for battery-powered operation.
 
 -   **Cut-off Voltage (V)**: The battery voltage at which the device will power down to protect the battery. This is mainly for boards with an AXP power management chip (like the T-beam).
+-   **Max charging voltage** / **Max charging current**: These charging limits are available only on boards with an **AXP** power management IC. The available options depend on the detected AXP version.
 -   **Enable sleep on low voltage**: For boards without an AXP chip, checking this will put the device into a deep sleep mode at the cut-off voltage instead of shutting it down completely.
 
 ### Bluetooth Settings
 
--   **Enable Bluetooth**: Activates the Bluetooth module to provide a KISS TNC interface over Bluetooth (either Classic or BLE, depending on the hardware). The Bluetooth device name will be your callsign.
+-   **Enable Bluetooth**: Activates the Bluetooth module to provide a TNC interface over Bluetooth (either Classic or BLE, depending on the hardware). The Bluetooth device name will be your callsign.
+-   **Bluetooth mode**: Selects the TNC protocol used over Bluetooth, either `KISS` or `TNC2`. The same mode is used for both Bluetooth Classic and BLE, while the available transport is selected automatically based on hardware support.
 
     -   ➡️ You can read more about Bluetooth: [Bluetooth](/lora_aprs_tracker/bluetooth/)
 
 ### TNC Settings
 
-Configure the device to act as a Terminal Node Controller (TNC) using the KISS protocol.
+Configure the device to act as a Terminal Node Controller (TNC).
 
--   **Enable TNC Server**: Enables a KISS TNC server over TCP/IP (WiFi).
--   **Enable Serial KISS**: Enables a KISS TNC over the device's serial (USB) port.
+-   **Enable TNC Server**: Enables a TNC server over TCP/IP (WiFi).
+-   **TNC Server mode**: The protocol used by the TNC server, either `KISS` or `TNC2`.
+-   **Enable Serial TNC**: Enables a TNC over the device's serial (USB) port.
+-   **Serial TNC mode**: The protocol used by the serial TNC, either `KISS` or `TNC2`.
 -   **Accept Own Frames**: If checked, the TNC will also process packets sent by the device itself.
+
+    -   `KISS` = AX.25 strict, so addresses longer than 6 characters and SSID outside 0-15 are rejected. `TNC2` = raw APRS text frame terminated with `\n`.
 
 ### Web Settings
 
@@ -154,15 +172,21 @@ This new section allows you to manage the settings for the device's built-in dis
 
 -   **Enable display**: Check this box to activate the display.
 -   **Display timeout**: Specify the time in seconds after which the display will automatically turn off to save power. A value of `0` disables this feature, keeping the display on permanently.
+-   **Display OLED type**: Select the OLED panel type, either `SSD1306 (0.96")` or `SH1106 (1.3")`. This applies to OLED displays only (not TFT).
+-   **Rotate display 180°**: Flips the display orientation upside down.
+-   **Remember last screen after reboot**: When checked, the device restores the screen that was active before the last reboot.
+-   **Display brightness**: A slider to adjust brightness. This applies to TFT displays only.
 
 ### Advanced Settings
 
 -   **CPU frequency**: Select the operating frequency for the device's processor. Options include `40 MHz`, `80 MHz`, `160 MHz`, and `240 MHz`.
+-   **PTT GPIO for external PA**: The GPIO pin used to key an external power amplifier (PA). Leave empty or set to `-1` to disable. When enabled, the pin is driven HIGH 100 ms before TX and returns LOW 100 ms after TX.
 -   **Admins callsigns (station operators)**: A comma-separated list of callsigns that have administrative privileges (e.g., for remote commands).
 -   **Ignored callsigns (blacklist)**: A comma-separated list of callsigns from which packets should be ignored.
 -   **Don't send blacklisted packets via TNC**: If checked, packets from blacklisted callsigns will not be forwarded to the TNC interfaces.
 -   **Don't send initial telemetry frames**: If checked, the device will skip sending the initial telemetry setup frames (`PARM`, `UNIT`, `EQNS`) upon startup.
 -   **GPS baudrate**: Allows you to override the default serial communication speed for an external GPS module. Select "Use board default" for most built-in modules.
+-   **GPS protocol**: The protocol used to communicate with the GPS module, either `NMEA` or `UBX` (u-blox binary protocol).
 
 ---
 
@@ -179,7 +203,7 @@ This section provides a live overview of the device's operational parameters.
 
 ### Last Received Packets
 
-This table displays the most recent LoRa packets heard by the device.
+This table displays the most recent LoRa packets heard by the device. Its columns are **Time**, **Packet**, **RSSI**, **SNR**, and **Freq Error** (the measured frequency error of the received signal).
 
 -   The **Time** column shows Coordinated Universal Time (UTC) if available, or the time since the device was last started (uptime) otherwise.
 -   Packets may be prefixed with indicators:

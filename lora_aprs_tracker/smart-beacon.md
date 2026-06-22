@@ -51,3 +51,11 @@ Below are the internal values used for each mode. While you don't need to change
 -   **Time values**: Define the fastest and slowest beacon rates.
 -   **Speed values**: Define the speed thresholds for switching between fast and slow rates.
 -   **Turn values**: Define how sensitive the tracker is to changes in direction to trigger a beacon.
+
+---
+
+## Custom Mode
+
+Besides the `Car`, `Bike`, and `Runner` presets, the configuration page also offers a **`Custom`** Smart Beacon mode. Selecting it lets you set each of the parameters above manually, so you can tune the algorithm for an activity that none of the presets fit. The available fields are Slow Rate, Slow Speed Threshold, Fast Rate, Fast Speed Threshold, Min TX Distance, Min Turn Beacon Delay, Turn Min Angle, and Turn Slope.
+
+> **Note:** Speed thresholds are entered in km/h on the configuration page and are converted internally to knots before being stored.

@@ -4,7 +4,7 @@ title: Home
 permalink: /lora_aprs_tracker/index/
 ---
 
-> This documentation was last updated on 16 January 2025, and applies to firmware version **v1.0.5**.
+> This documentation was last updated on 22 June 2026, and applies to firmware version **v1.0.6**.
 
 **LoRa APRS Tracker** is a software solution designed with a strong focus on RF-based APRS communication at **1200 bps**. This project prioritizes reliable radio-frequency (RF) communication and **tracker** functionality, rather than acting as only tracker to send your position. If you're looking for an RF-centric solution tailored for LoRa APRS operations, this is the software for you.
 
