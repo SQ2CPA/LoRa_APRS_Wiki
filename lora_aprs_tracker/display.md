@@ -72,11 +72,13 @@ If distance is missing, it may be because the received frame (e.g., a message) d
 
 GPS data including:
 
-- Number of satellites
+- Number of satellites. When both values are available, they are shown as **used / in view** (e.g. `7/12`); otherwise, most commonly only the **used** count is displayed. The figures combine all supported constellations: GPS, GLONASS, Galileo, BeiDou and QZSS.
 - Latitude
 - Longitude
 - Altitude
 - Course
+
+The values on this screen update only once the receiver has a valid GPS fix; until then the position fields stay empty or zeroed.
 
 ### INFO
 
@@ -95,6 +97,8 @@ WiFi network information:
 
 - Network type (Client or AP)
 - IP address
+
+> ℹ️ **Note:** In Client mode the device is also reachable by hostname at `http://<callsign>.local` (mDNS), so you don't have to type the IP shown here. See the [Configuration](/lora_aprs_tracker/configuration/) page for details.
 
 ### LAST RX
 
@@ -268,6 +272,8 @@ The tracker supports an automatic display timeout to conserve power, especially 
 - **Wake-up:** Pressing the button will wake the display back up
 
 This feature is particularly useful for devices using TFT displays, as the backlight consumes significant power.
+
+For TFT boards (such as the **Heltec Wireless Tracker**), you can also adjust the backlight intensity with the **Display brightness** slider in the web interface. See the [Configuration](/lora_aprs_tracker/configuration/#display-settings) page. This setting applies to TFT displays only.
 
 ---
 

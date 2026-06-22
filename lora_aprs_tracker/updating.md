@@ -41,6 +41,8 @@ This is a recommended method for updating as it keeps all your settings intact. 
 
 This is the easiest method if your device is connected to a WiFi network with internet access. It allows the device to download and install the latest firmware directly from the internet.
 
+> ⚠️ **Important:** If your device is currently running firmware **older than 1.0.2**, disable Bluetooth before starting a Remote OTA update, as it can interfere with the update process. You can turn it off in the [Configuration](/lora_aprs_tracker/configuration/#bluetooth-settings) page or from the device [Menu](/lora_aprs_tracker/menu/).
+
 1.  **Ensure your device has an internet connection.**
 
     -   In the web interface, connect the device to a WiFi network that has internet access.
