@@ -144,6 +144,8 @@ Manage the device's power-saving features, especially for battery-powered operat
 -   **Max charging voltage** / **Max charging current**: These charging limits are available only on boards with an **AXP** power management IC. The available options depend on the detected AXP version.
 -   **Enable sleep on low voltage**: For boards without an AXP chip, checking this will put the device into a deep sleep mode at the cut-off voltage instead of shutting it down completely.
 
+    -   ➡️ You can read more about how this works: [Battery Sleep Management](/lora_aprs_tracker/battery-sleep-management/)
+
 ### Bluetooth Settings
 
 -   **Enable Bluetooth**: Activates the Bluetooth module to provide a TNC interface over Bluetooth (either Classic or BLE, depending on the hardware). The Bluetooth device name will be your callsign.
