@@ -49,6 +49,10 @@ Getting your LoRa APRS App running is easy. Follow these steps in order:
 - **Smart Station Lists**: Automatically filters for active, message-capable stations. Old stations are auto-cleaned from the list.
 - **Rich Station Data**: View detailed telemetry graphs, weather data, and raw packet info for any station.
 - **Network Map**: A visual map of all stations you are hearing to understand your local network coverage.
+- **Winlink Support (Experimental)**: Send and receive Winlink email messages directly from the app.
+- **Predefined Messages**: Save frequently used messages for quick, one-tap sending.
+- **Query Documentation**: Built-in documentation for APRS queries (for supported devices).
+- **Friends Tab**: Monitor the activity of your friends and favorite stations at a glance.
 
 ---
 
