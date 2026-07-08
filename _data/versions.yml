@@ -1,0 +1,15 @@
+# Central version numbers and release/update dates.
+# Edit here once — header.html, sidebar/main.html and the section index.md
+# pages all read these values.
+#
+#   version: the number shown as a badge and in the docs intro line
+#   date:    the "last updated on ..." date shown in each index.md
+tracker:
+    version: 1.0.6
+    date: 22 June 2026
+digi:
+    version: 1.0.6
+    date: 13 June 2026
+mobile_app:
+    version: 1.0.1
+    date: 7 July 2026
