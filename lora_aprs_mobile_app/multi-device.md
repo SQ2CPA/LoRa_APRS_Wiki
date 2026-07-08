@@ -38,9 +38,29 @@ Each device requires the following configuration:
 
 - **Device Name**: An internal label to help you identify this device. It can be anything - for example, your callsign with SSID like `SP0ABC-7`, or a descriptive name like "Car Tracker" or "Home Digi". Since you can have multiple devices with the same callsign and SSID, the Device Name is used to distinguish between them (not the callsign/SSID pair).
 - **Callsign**: Your amateur radio callsign, maximum 6 characters due to the AX.25 protocol limitation.
-- **SSID**: A secondary station identifier, value from 0 to 15.
+- **SSID**: A secondary station identifier. The allowed values depend on the selected **TNC Type** (see below).
 
 > **Important:** The **Callsign** and **SSID** configured here **must match** the callsign and SSID set on the physical device you are connecting to. The app synchronizes with the tracker, and it will not work correctly if these values do not match. There is no benefit to using different SSIDs for messages and position beacons - keep them the same as your device.
+
+---
+
+## TNC Type
+
+The app now supports two TNC types - **KISS** and **TNC2**. Previously only **KISS** was available. Selecting the correct TNC Type determines the format of the frames the app exchanges with your device, as well as which **SSID** values you are allowed to use.
+
+### KISS
+
+<img src="/assets/images/lora_aprs_mobile_app/multi-device/type-kiss.jpg" alt="KISS TNC Type" style="max-width: 300px; width: 100%;">
+
+KISS is the standard TNC type used by most LoRa APRS trackers. When KISS is selected, the **SSID** is limited to the classic AX.25 range of **0 to 15**.
+
+### TNC2
+
+<img src="/assets/images/lora_aprs_mobile_app/multi-device/type-tnc2.jpg" alt="TNC2 TNC Type" style="max-width: 300px; width: 100%;">
+
+TNC2 uses the human-readable TNC2 monitor format. When TNC2 is selected, the **SSID** is no longer restricted to 0-15 - you can use an alphanumeric SSID in the `-XX` form (for example `-A1` or `-CB`).
+
+> **Note:** Make sure the selected TNC Type matches the mode your physical device is operating in. An alphanumeric SSID will only work when both the app and the device are set to **TNC2**.
 
 ---
 
