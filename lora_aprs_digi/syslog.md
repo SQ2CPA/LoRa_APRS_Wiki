@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: digi
 title: Syslog for Packet Analysis
 permalink: /lora_aprs_digi/syslog/
 ---

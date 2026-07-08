@@ -6,7 +6,7 @@ permalink: /lora_aprs_digi/status-packets/
 
 In the APRS network, a status packet serves a specific, functional purpose. It is not meant to be an advertising banner or a static message. Its goal is to inform other stations about the current state, activity, or configuration of your device in real-time.
 
-Our firmware uses status packets to announce key events, which can be helpful for remote diagnostics or simply understanding what the tracker is doing.
+Our firmware uses status packets to announce key events, which can be helpful for remote diagnostics or simply understanding what the station is doing.
 
 ---
 

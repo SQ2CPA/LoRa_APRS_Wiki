@@ -20,12 +20,10 @@ Getting your LoRa APRS Digi/IGate running is easy. Follow these steps in order:
     - **➡️ [See Supported Boards](/lora_aprs_digi/supported-boards/)**
 
 2.  **Installation**: First, you need to flash the firmware onto your device. Follow the detailed instructions on the installation page.
-
-- **➡️ [Go to Installation Guide](/lora_aprs_digi/installation/)**
+    - **➡️ [Go to Installation Guide](/lora_aprs_digi/installation/)**
 
 3.  **Configuration**: Once the firmware is installed, you'll need to configure your station's parameters, such as your callsign, WiFi, and LoRa settings.
-
-- **➡️ [Go to Configuration Guide](/lora_aprs_digi/configuration/)**
+    - **➡️ [Go to Configuration Guide](/lora_aprs_digi/configuration/)**
 
 4.  **Learn More**: After completing the basic setup, you can explore the rest of the wiki to understand advanced features like updating the firmware and more.
 

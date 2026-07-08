@@ -4,7 +4,7 @@ title: Device Info
 permalink: /lora_aprs_mobile_app/device-info/
 ---
 
-The Device Info screen provides detailed information and remote-control actions for your connected TNC. You can access this screen by tapping on your callsign in the **Top Status bar** on the Main Screen.
+The Device Info screen provides detailed information and remote-control actions for your connected TNC. You can access this screen by **long-pressing** (press and hold) your callsign in the **Top Status bar** on the Main Screen. A single tap instead sends a beacon (force beacon), provided your device supports it.
 
 <img src="/assets/images/lora_aprs_mobile_app/device-info/access-device-info.jpg" alt="Accessing Device Info" style="max-width: 300px; width: 100%;">
 
