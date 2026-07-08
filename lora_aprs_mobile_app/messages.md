@@ -27,6 +27,12 @@ On the **Main Screen**, you will find the **Messages Section**.
 - **Messages List (Chat Icon)**: Tapping this button opens your full conversation list. If you have unread messages, a badge will appear on this icon indicating the count.
 - **New Message (Pencil Icon)**: This button, located next to the chat icon, opens a new, blank message screen.
 
+### Unread Messages Indicator on Other Screens
+
+You don't have to be on the main screen to know when something new arrives. On other screens (for example, **Recent stations**), a messages icon with an unread badge appears in the top-right corner whenever you have unread messages. Tapping it takes you straight to your conversations.
+
+<img src="/assets/images/lora_aprs_mobile_app/messages/message-notification-other.jpg" alt="Unread Messages Indicator on Other Screens" style="max-width: 300px; width: 100%;">
+
 ---
 
 ## New Message Screen
@@ -71,7 +77,13 @@ This is a standard chat screen showing the history with a specific station.
 
 <img src="/assets/images/lora_aprs_mobile_app/messages/conversation-view.jpg" alt="Conversation View Screen" style="max-width: 300px; width: 100%;">
 
-In the top-right corner you will see the **callsign with SSID** - this is the SSID that your messages are currently being sent to, serving as an informational indicator. Next to it there are two icons:
+At the top of the conversation you will see the **callsign with SSID** - this is the SSID that your messages are currently being sent to, serving as an informational indicator. On the right side of the top bar there are two buttons - one for **Predefined Messages** and one for the **Query Commands** helper.
+
+<img src="/assets/images/lora_aprs_mobile_app/messages/messages-top.jpg" alt="Conversation Top Bar" style="max-width: 300px; width: 100%;">
+
+**Note**: These two buttons sometimes get stuck and don't respond on the first tap - if nothing happens, just tap a few times and the panel will open.
+
+Next to the callsign there are two icons:
 
 - **Predefined Messages (left icon)**: Opens a list of predefined messages that you can quickly recall, edit, and send. This is especially useful for activities like **SOTA**, **POTA**, and similar operations where you frequently send the same messages.
 
@@ -80,6 +92,18 @@ In the top-right corner you will see the **callsign with SSID** - this is the SS
 - **Query Commands (right icon)**: Opens a toolkit of query commands. Useful when you want to quickly send a query command to a station but don't remember the exact syntax.
 
 <img src="/assets/images/lora_aprs_mobile_app/messages/query-commands.jpg" alt="Query Commands" style="max-width: 300px; width: 100%;">
+
+### Query Command Suggestions
+
+When you start typing a **query command** for a supported device, the app shows inline suggestions above the message field, with the matching commands and a short description of each. You can tap a suggestion to fill it in instead of typing the full command.
+
+<img src="/assets/images/lora_aprs_mobile_app/messages/query-helper.jpg" alt="Query Command Suggestions" style="max-width: 300px; width: 100%;">
+
+### Quick Replies
+
+If the other station has just written to you, the app shows a row of **quick replies** (such as `Yes`, `No`, `73!`, `QSL`, `QRT`) above the message field. Tap one to instantly send that response without typing.
+
+<img src="/assets/images/lora_aprs_mobile_app/messages/quick-replies.jpg" alt="Quick Replies" style="max-width: 300px; width: 100%;">
 
 ### Message Details
 
